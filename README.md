@@ -1,5 +1,5 @@
-# *NScripter LUA API Documentation
+# *NScripter LUA API Documentation in English
 This is a copy of the *NScripter LUA API documentation as found on [Senzogawa's site](http://senzogawa.s90.xrea.com/reference/NScrLuaAPI.html).
-I want to eventually try and translate it (but if anyone speaks Japanese well and wants to contibute, please [contact me](https://galladite.net/about.html) as my Japanese is pretty awful) in order to eventually include it in the new [devkit](https://github.com/Galladite27/ONScripter-EN-devkit) I'm working on.
+This is currently in the process of being translated to English for Galladite and will eventually be included in his new [devkit](https://github.com/Galladite27/ONScripter-EN-devkit).
 
-[Just leaving this link here for now](http://sorejyadamedarou.sakura.ne.jp/nscripter/nslua.htm)
+[Here's a link he included in his original copy.](http://sorejyadamedarou.sakura.ne.jp/nscripter/nslua.htm)

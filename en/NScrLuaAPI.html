@@ -14,19 +14,19 @@
             <h5>About Command Background Colors</h5>
             <table id="BGCOLOR_EXPLANATION_TABLE">
                 <tr>
-                    <td width="75" bgcolor="#FFCCCC">Special Command</td>
+                    <td width="150" bgcolor="#FFCCCC">Special Command</td>
                     <td>Commands not classified under other categories</td>
                 </tr>
                 <tr>
-                    <td width="75" bgcolor="#FFFFCC">High-Level Command</td>
+                    <td width="150" bgcolor="#FFFFCC">High-Level Command</td>
                     <td>Commands similar to NScripter syntax</td>
                 </tr>
                 <tr>
-                    <td width="75" bgcolor="#CCFFFF">Callback Command</td>
+                    <td width="150" bgcolor="#CCFFFF">Callback Command</td>
                     <td>Commands that override default behavior</td>
                 </tr>
                 <tr>
-                    <td width="75" bgcolor="#CCFFCC">Low-Level Command</td>
+                    <td width="150" bgcolor="#CCFFCC">Low-Level Command</td>
                     <td>Commands similar to Lua functions</td>
                 </tr>
             </table>
@@ -449,7 +449,6 @@
 					<a id="NL_dofile" />
 					<h2>
 						<span class="WordVersion">Ver.2.94</span><span class="WordField">【Special】</span><br />
-						<span class="WordPhonetic">enueru doofile</span><br />
 						NL_dofile
 					</h2>
 					<h4><a class="WordCategory" href="#category_base">Basic Functions</a></h4>
@@ -477,7 +476,6 @@
 					<a id="NSCALL_animation" />
 					<h2>
 						<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-						<span class="WordPhonetic">enu esu koru animeeshon</span><br />
 						NSCALL_animation
 					</h2>
 					<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -517,7 +515,6 @@
 			<a id="NSCALL_close" />
 			<h2>
 				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-				<span class="WordPhonetic">enu esu koru kurouzu</span><br />
 				NSCALL_close
 			</h2>
 			<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -549,16 +546,9 @@
 				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
 			</div>
 
-			<a id="NSCALL_end" />
-			<h2>
-				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-				<span class="WordPhonetic">enu esu koru endo</span><br />
-				NSCALL_end
-			</h2>
 				<a id="NSCALL_end" />
 				<h2>
 					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-					<span class="WordPhonetic">enu esu koru endo</span><br />
 					NSCALL_end
 				</h2>
 				<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -580,7 +570,6 @@
 				<a id="NSCALL_load" />
 				<h2>
 					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-					<span class="WordPhonetic">enu esu koru r?do</span><br />
 					NSCALL_load
 				</h2>
 				<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -607,7 +596,6 @@
 				<a id="NSCALL_reset" />
 				<h2>
 					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-					<span class="WordPhonetic">enu esu koru risetto</span><br />
 					NSCALL_reset
 				</h2>
 				<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -629,7 +617,6 @@
 				<a id="NSCALL_save" />
 				<h2>
 					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
-					<span class="WordPhonetic">enu esu koru seibu</span><br />
 					NSCALL_save
 				</h2>
 				<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
@@ -651,205 +638,189 @@
 						</div>
 					</div>
 				</div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">セーブされる直前の動作を指定する。</div>
-                    <pre class="ExSource">function NSCALL_save(savenum)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCALL_savepoint" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【コールバック】</span><br />
-                <span class="WordPhonetic">えぬえすこーるせーぶぽいんと</span><br />
-                NSCALL_savepoint
-            </h2>
-            <h4><a class="WordCategory" href="#category_callback">コールバック</a></h4>
-            <h3>function NSCALL_savepoint()</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    セーブポイントに到達したときに呼び出されます。<br />
-                    Lua側でセーブしておきたいデータがある場合はこの段階でメモリ内のセーブデータを更新してください。<br />
-                    引数も戻り値もありません。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">この命令を使っても、その後でデフォルトの処理はちゃんと行われます。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">セーブポイントに到達したときの動作を指定する。</div>
-                    <pre class="ExSource">function NSCALL_savepoint()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCALL_tag" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【コールバック】</span><br />
-                <span class="WordPhonetic">えぬえすこーるたぐ</span><br />
-                NSCALL_tag
-            </h2>
-            <h4><a class="WordCategory" href="#category_callback">コールバック</a></h4>
-            <h3>function NSCALL_tag(tag)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">タグテキスト</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    デフォルトのpretextgosubのタイミングで呼び出されます。<br />
-                    この命令を使うとデフォルトの処理は行われなくなります。pregextgosubも無効になります。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">NSCALL_tagからNSGotoやNSGosub等でジャンプしないでください。戻ってこれなくなります。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">タグテキストを取得する。</div>
-                    <pre class="ExSource">function NSCALL_tag(tag)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCALL_text" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【コールバック】</span><br />
-                <span class="WordPhonetic">えぬえすこーるてきすと</span><br />
-                NSCALL_text
-            </h2>
-            <h4><a class="WordCategory" href="#category_callback">コールバック</a></h4>
-            <h3>function NSCALL_text(printstr)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">表示文（変換後）</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    表示文の、変換が終わったものが送られます。実際に表示される文字列です。<br />
-                    テキストを表示します。@や\を読み込んだら対応するクリック待ちも行ってください。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">この命令を使うと、デフォルトの処理は行われなくなります。textgosubも無効になります。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">表示文（変換後）を取得する。</div>
-                    <pre class="ExSource">function NSCALL_text(printstr)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCALL_text0" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【コールバック】</span><br />
-                <span class="WordPhonetic">えぬえすこーるてきすとぜろ</span><br />
-                NSCALL_text0
-            </h2>
-            <h4><a class="WordCategory" href="#category_callback">コールバック</a></h4>
-            <h3>function NSCALL_text0(plainstr)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">表示文（変換前）</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    表示文の、表示テキストが渡されたタイミングで呼び出されます。<br />
-                    この段階では変数を展開したり半角数字を全角に直したりしていません。<br />
-                    自動で変換をしたくない場合はこちらを設定します。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">この命令を使うと、デフォルトの変換処理やテキスト表示処理を呼び出しません。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">表示文（変換後）を取得する。</div>
-                    <pre class="ExSource">function NSCALL_text0(plainstr)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCheckComma" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすちぇっくこんま</span><br />
-                NSCheckComma
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>b=NSCheckComma()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">次がコンマならtrue、コンマでなければfalse</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">次の記号がコンマかどうかを調べます。読み込みはしません。引数の数を変えたいときに使います。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">bに次の記号がコンマかどうかを調べた結果を取得する。</div>
-                    <pre class="ExSource">b=NSCheckComma() -- 次がコンマならb=true コンマでなければb=falseが代入される。</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSClick" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすくりっく</span><br />
-                NSClick
-            </h2>
-            <h4><a class="WordCategory" href="#category_input">キーボード・マウス入力</a></h4>
-            <h3>NSClick()</h3>
-            <div class="ContentBody">
-                <p class="Description">click命令と等価です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">左クリックを待ちます。</div>
-                    <pre class="ExSource">NSClick()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCOM_" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすこむ</span><br />
-                NSCOM_
-            </h2>
-            <h4><a class="WordCategory" href="#category_base">基本機能</a></h4>
-            <h3>function NSCOM_func() end</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    luasub func<br />
-                    この命令を実行すると、以後シナリオスクリプト（00.txt～）でfunc命令を実行したときに、<br />
-                    Lua関数 NSCOM_func() が呼び出されます。<br />
-                    luasubで登録されるLua関数には引数も戻り値もありません。<br />
-                    引数や戻り値はそれぞれ下で説明している関数を使って利用してください。<br />
-                    なお、既存の命令も上書きできます。<br />
-                    たとえばluasub bgとすると、もともとのbg命令ではなくluaのNSCOM_bg関数が優先されます。<br />
-                    もともとのbg命令を呼びたい場合は、defsubのときと同様_bgとしてください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScrLua命令funcを定義して呼び出す。</div>
-                    <pre class="ExSource">
+			<a id="NSCALL_savepoint" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
+				NSCALL_savepoint
+			</h2>
+			<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
+			<h3>function NSCALL_savepoint()</h3>
+			<div class="ContentBody">
+				<p class="Description">
+					Called when reaching a save point.<br />
+					If there is data to save on the Lua side, update the in-memory save data at this point.<br />
+					No arguments or return values.
+				</p>
+				<div class="Notice">
+					<div class="NoticeHead">Note:</div>
+					<div class="NoticeBody">
+						Even if this command is used, the default processing will still occur afterward.
+					</div>
+				</div>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Define behavior when reaching a save point.</div>
+					<pre class="ExSource">function NSCALL_savepoint()</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSCALL_tag" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
+				NSCALL_tag
+			</h2>
+			<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
+			<h3>function NSCALL_tag(tag)</h3>
+			<div class="Arguments">
+				●Argument<br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Tag text</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Called at the default `pretextgosub` timing.<br />
+					Using this command disables the default processing and `pregextgosub`.
+				</p>
+				<div class="Notice">
+					<div class="NoticeHead">Note:</div>
+					<div class="NoticeBody">
+						Do not use `NSGoto`, `NSGosub`, or similar commands to jump from `NSCALL_tag`. You will not be able to return.
+					</div>
+				</div>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Retrieve tag text.</div>
+					<pre class="ExSource">function NSCALL_tag(tag)</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSCALL_text" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
+				NSCALL_text
+			</h2>
+			<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
+			<h3>function NSCALL_text(printstr)</h3>
+			<div class="Arguments">
+				●Argument<br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Display text (after conversion)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Called when the display text has been converted.<br />
+					It is the actual string to be displayed. Handle text display, including waiting for clicks triggered by `@` or `\`.
+				</p>
+				<div class="Notice">
+					<div class="NoticeHead">Note:</div>
+					<div class="NoticeBody">
+						Using this command disables the default processing, including `textgosub`.
+					</div>
+				</div>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Retrieve converted display text.</div>
+					<pre class="ExSource">function NSCALL_text(printstr)</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSCALL_text0" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Callback】</span><br />
+				NSCALL_text0
+			</h2>
+			<h4><a class="WordCategory" href="#category_callback">Callback</a></h4>
+			<h3>function NSCALL_text0(plainstr)</h3>
+			<div class="Arguments">
+				●Argument<br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Display text (before conversion)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Called when the display text is passed before conversion.<br />
+					Variables have not been expanded, and half-width numbers have not been converted to full-width.<br />
+					Use this if you want to disable automatic conversion.
+				</p>
+				<div class="Notice">
+					<div class="NoticeHead">Note:</div>
+					<div class="NoticeBody">
+						Using this command disables default text processing and display.
+					</div>
+				</div>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Retrieve display text before conversion.</div>
+					<pre class="ExSource">function NSCALL_text0(plainstr)</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSCheckComma" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSCheckComma
+			</h2>
+			<h4><a class="WordCategory" href="#category_argument">Argument Handling</a></h4>
+			<h3>b = NSCheckComma()</h3>
+			<div class="Returns">
+				●Return Value<br />
+				<span class="RetType">Boolean</span><span class="RetMeaning">True if the next symbol is a comma, false otherwise</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Checks whether the next symbol is a comma without reading it. Useful when adjusting the number of arguments.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Assign the result of the check to `b`.</div>
+					<pre class="ExSource">b = NSCheckComma() -- True if next is a comma, false otherwise.</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSClick" />
+			<h2>
+				<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+				NSClick
+			</h2>
+			<h4><a class="WordCategory" href="#category_input">Keyboard & Mouse Input</a></h4>
+			<h3>NSClick()</h3>
+			<div class="ContentBody">
+				<p class="Description">Equivalent to the `click` command.</p>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Wait for a left-click.</div>
+					<pre class="ExSource">NSClick()</pre>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSCOM_" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSCOM_
+			</h2>
+			<h4><a class="WordCategory" href="#category_base">Basic Functions</a></h4>
+			<h3>function NSCOM_func() end</h3>
+			<div class="ContentBody">
+				<p class="Description">
+					Execute the Lua function `NSCOM_func()` when the `func` command is executed in a scenario script.<br />
+					The registered Lua function via `luasub` has no arguments or return values.<br />
+					Use additional functions described below for argument passing and return values.<br />
+					Existing commands can also be overwritten.<br />
+					For example, using `luasub bg` prioritizes the Lua function `NSCOM_bg` instead of the built-in `bg` command.<br />
+					To call the original `bg` command, use `_bg`.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example:</span><br />
+					<div class="ExComment">Define and call a custom NScrLua command `func`.</div>
+					<pre class="ExSource">
 --- NScripter ---
 *define
 luasub func
@@ -860,1345 +831,1226 @@ func
 end
 
 --- Lua ---
-function NSCOM_func(){
-    NSExec("puttext \"成功\"")
-}
+function NSCOM_func()
+    NSExec("puttext \"Success\"")
+end
+        </pre>
+				</div>
+				</div>
+				<hr />
+				<a href="#NSCheckComma">NSCheckComma</a> / <a href="#NSGetIntValue">NSGetIntValue</a> / <a href="#NSGetStrValue">NSGetStrValue</a> / <a href="#NSPopComma">NSPopComma</a> / <a href="#NSPopID">NSPopID</a> /
+				<a href="#NSPopInt">NSPopInt</a> / <a href="#NSPopIntRef">NSPopIntRef</a> / <a href="#NSPopLabel">NSPopLabel</a> / <a href="#NSPopStr">NSPopStr</a> / <a href="#NSPopStrRef">NSPopStrRef</a> /
+				<a href="#NSSetIntValue">NSSetIntValue</a> / <a href="#NSSetStrValue">NSSetStrValue</a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSCOM_main" />
+				<h2>
+				<span class="WordVersion">Ver.2.95</span><span class="WordField">【High Level】</span><br />
+				NSCOM_main
+				</h2>
+				<h4><a class="WordCategory" href="#category_base">Basic Functions</a></h4>
+				<h3>function NSCOM_main() end</h3>
+				<div class="ContentBody">
+				<p class="Description">
+				When only `system.lua` exists without `0.txt`, `00.txt`, or `nscript.dat`, the system starts using only `system.lua`.<br />
+				Settings like `--mode800` should be specified on the first line (same behavior as with `0.txt`).
+				</p>
+				<div class="Example">
+				<span class="ExHeading">Example)</span><br />
+				<div class="ExComment">Start with Lua only in 800x600 resolution and display a greeting.</div>
+				<pre class="ExSource">
+				--mode800
 
-                    </pre>
-                </div>
-                <hr />
-                <a href="#NSCheckComma">NSCheckComma</a> / <a href="#NSGetIntValue">NSGetIntValue</a> / <a href="#NSGetStrValue">NSGetStrValue</a> / <a href="#NSPopComma">NSPopComma</a> / <a href="#NSPopID">NSPopID</a> /
-                <a href="#NSPopInt">NSPopInt</a> / <a href="#NSPopIntRef">NSPopIntRef</a> / <a href="#NSPopLabel">NSPopLabel</a> / <a href="#NSPopStr">NSPopStr</a> / <a href="#NSPopStrRef">NSPopStrRef</a> /
-                <a href="#NSSetIntValue">NSSetIntValue</a> / <a href="#NSSetStrValue">NSSetStrValue</a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSCOM_main" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすこむめいん</span><br />
-                NSCOM_main
-            </h2>
-            <h4><a class="WordCategory" href="#category_base">基本機能</a></h4>
-            <h3>function NSCOM_main() end</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    0.txt 00.txt nscript.datがなくて、system.luaだけがあるとき、system.luaだけで起動するようになりました。<br />
-                    ;mode800等の設定は、一行目に--mode800 などのようにして行います（動作は0.txtの時と同じ）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">Luaのみで800*600で起動して挨拶を表示する。</div>
-                    <pre class="ExSource">
---mode800
+				function NSCOM_main(){
+					NSExec("puttext \"Started!\"")
+					NSClick()
+					NSEnd()
+				}
+				</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
 
-function NSCOM_main(){
-    NSExec("puttext \"起動した！\"")
-    NSClick()
-    NSEnd()
-}
+				<a id="NSDBlt" />
+				<h2>
+				<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+				NSDBlt
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDBlt(num,dx,dy,w,h,sx,sy)</h3>
+				<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Texture Number (0?15)</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Destination Top-left X Coordinate</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Destination Top-left Y Coordinate</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Width</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Height</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Source Top-left X Coordinate</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Source Top-left Y Coordinate</span><br />
+				</div>
+				<div class="ContentBody">
+				<p class="Description">
+				Copies a texture directly to the screen.<br />
+				`num` specifies the texture number.<br />
+				`dx,dy` are the destination top-left coordinates on the screen. `sx,sy` are the source top-left coordinates within the texture, while `w,h` specify width and height.<br />
+				Since this function directly copies rectangles without considering overlap, it is faster than the NSDSp series commands.<br />
+				Use this function for drawing images without alpha blending, overlap, or transformation.
+				</p>
+				<div class="Example">
+				<span class="ExHeading">Example)</span><br />
+				<div class="ExComment">Copy a 32x32 area from texture 0 at coordinates (64,0) to screen coordinates (0,64).</div>
+				<pre class="ExSource">NSDBlt(0,0,64,32,32,64,0)</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
 
-                    </pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDBlt" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーびると</span><br />
-                NSDBlt
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDBlt(num,dx,dy,w,h,sx,sy)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">幅</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">高さ</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上Y座標</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャをそのまま画面にコピーします。<br />
-                    numはテクスチャ番号です。<br />
-                    dx,dyは転送先、画面上の左上の点の座標。sx,syは転送元、テクスチャ上の左上の点の座標、w,hは幅と高さです。<br />
-                    矩形を重ね合わせを考慮せずそのままコピーしますので、ここから先で説明しているNSDSp～系の命令よりも高速です。<br />
-                    αブレンディングも重ね合わせや変形の必要もない画像はなるべくこの関数で描画してください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ0番の座標(64,0)サイズ32x32を画面座標(0,64)にコピーします。</div>
-                    <pre class="ExSource">NSDBlt(0,0,64,32,32,64,0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDCall" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーこーる</span><br />
-                NSDCall
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDCall(texnum,filename,procnum(,param))</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャ作成時に、外部DLLを使ってテクスチャの中身をバイト単位で設定できます。<br />
-                    NSD系のテクスチャは作成時の内容を変更することが出来ません。<br />
-                    例えば、フォントを出力するような外部DLLを使って、文字フォントのテクスチャを作ることが出来ます。<br />
-                    なお、引数paramがない場合は省略できます（この場合、DLLにはNULLが送られます）。<br />
-                    呼び出されるDLL関数の型は次の通りにしてください。<br />
-                    void Func (unsigned char *ptr,int w,int h,const char *param);<br />
-                    paramは呼び出し元から渡された文字列引数です。指定されなかった場合はNULLが入ります。<br />
-                    wは画像の幅、hは画像の高さです。<br />
-                    ptrはビットデータ配列です。<br />
-                    (x,y)ピクセルのデータはptr[x*4+y*w*4]～ptr[x*4+y*w*4+3]にあります。<br />
-                    x*4+y*w*4=posとおくと、p[pos]=青 p[pos+1]=緑 p[pos+2]=赤 p[pos+3]=α値です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">10番テクスチャをまず画像ファイル"*200,60"（つまり200x60の完全透明画像）で初期化し、 その後、番号fontprocに登録したDLL関数を"20,20,あいうえお"という引数で呼び出します</div>
-                    <pre class="ExSource">NSDCall(10,"*200,60",fontproc,"20,20,あいうえお")</pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">8番テクスチャをまずtest.pngで初期化し、番号filterprocに登録したDLL関数を"gauss"という引数で呼び出します。</div>
-                    <pre class="ExSource">NSDCall(8,"test.png",filterproc,"gauss")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDClear" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーくりあ</span><br />
-                NSDClear
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDClear()</h3>
-            <div class="ContentBody">
-                <p class="Description">画面を真っ黒でクリアします。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">画面を真っ黒でクリアします。</div>
-                    <pre class="ExSource">NSDClear()</pre>
-                </div>
+				<a id="NSDClear" />
+				<h2>
+				<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+				NSDClear
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDClear()</h3>
+				<div class="ContentBody">
+				<p class="Description">Clears the screen to black.</p>
+				<div class="Example">
+				<span class="ExHeading">Example)</span><br />
+				<div class="ExComment">Clears the screen to black.</div>
+				<pre class="ExSource">NSDClear()</pre>
+				</div>
                 <hr />
                 <a href="#"></a> /
                 <hr />
                 <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
             </div>
             <a id="NSDCopyToBg" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーこぴーとぅびーじー</span><br />
-                NSDCopyToBg
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDCopyToBg()</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSD～系の画像処理は、NScripterの描画処理とは独立しています。<br />
-                    したがって、Lua関数から抜けたり、Lua内部からNScripterの元々の機能を呼び出すと、描画している画像は全部上書きされてしまいます。<br />
-                    残す必要がある場合は、この関数を実行することで、今現在の画面をNScripter上の「背景画面」としてコピーすることが出来ます。<br />
-                    なお、この命令はNScripter側のBGロードと同じ処理をしていますので、立ち絵は全部消去されます。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">今現在の画面をNScripter上の「背景画面」としてコピーします。</div>
-                    <pre class="ExSource">NSDCopyToBg()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDDelete" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーでりーと</span><br />
-                NSDDelete
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDDelete(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャを削除します。なお、明示的に削除しなくても、同じ番号にテクスチャをロードすると古いテクスチャは削除されます。<br />
-                    使わなくなったテクスチャは削除するとメモリが節約できます。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">0番のテクスチャを削除します。</div>
-                    <pre class="ExSource">NSDDelete(0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDDLL" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーでぃーえるえる</span><br />
-                NSDDLL
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>procnum=NSDDLL(dllname,funcname)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">DLLファイル名</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">関数名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSD系命令のテクスチャ作成時に呼び出すDLL関数を設定します。<br />
-                    Luaファイル読み込み時に一度だけ実行してください。<br />
-                    戻り値の番号はNSDCall関数にて引数に指定します。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">deffont.dll内のFont関数を読み込み、関数番号をfontprocに格納します。</div>
-                    <pre class="ExSource">fontproc=NSDDLL("deffont.dll","Font")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDefSpline" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでふすぷらいん</span><br />
-                NSDefSpline
-            </h2>
-            <h4><a class="WordCategory" href="#category_spline">スプライン補完</a></h4>
-            <h3>NSDefSpline(num,xarray,yarray)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">データ番号(0～99)</span><br />
-                <span class="ArgType">配列</span><span class="ArgMeaning">xの座標を小さい順に格納した配列</span><br />
-                <span class="ArgType">配列</span><span class="ArgMeaning">xにそれぞれ対応するyの値を格納した配列</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    numにはスプライン補間のデータ番号（０～９９）を指定します。<br />
-                    xarrayにxの座標を小さい順に格納した配列、yarrayにそのxにそれぞれ対応するyの値を格納した配列を渡します。<br />
-                    スプライン補間に必要な計算をして、そのデータ番号に登録します。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">
-                        なお、スプライン補間のためには点のデータは最低でも三つ必要です。<br />
-                        20090419版以降で実装。
-                    </div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment"></div>
-                    <pre class="ExSource"></pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDFill" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーふぃる</span><br />
-                NSDFill
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDFill(lx,ly,rx,ry,r,g,b)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">赤成分(0～255)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">緑成分(0～255)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">青成分(0～255)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    画面の指定した領域を指定した色で塗りつぶします。<br />
-                    それぞれ、左上の座標、右下の座標、RGBの指定（0～255で）です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">640x480時に画面の全体を白色で塗りつぶします。</div>
-                    <pre class="ExSource">NSDFill(0,0,639,479,255,255,255)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDGetSize" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーげっとさいず</span><br />
-                NSDGetSize
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>width,height=NSDGetSize(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">テクスチャのサイズを取得します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">0番のテクスチャのサイズを取得します。</div>
-                    <pre class="ExSource">width,height=NSDGetSize(0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDLoad" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーろーど</span><br />
-                NSDLoad
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDLoad(num,filename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">PNGファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    PNGファイルをテクスチャとしてロードします。アーカイブからでも裸でも読めます（ただし最新版のnspng.dllが必要）<br />
-                    numはテクスチャ番号です。0から15が指定できます。<br />
-                    この関数群は画像の一部を指定して転送することが出来ますので、一緒に使うチップは連結してまとめて置いてください。<br />
-                    （これは、将来的にグラフィックカードのテクスチャ機能に置き換えるときに、テクスチャ切り替えを少なくして高速化するためです）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ2番にtest.pngを読み込みます。</div>
-                    <pre class="ExSource">NSDLoad(2,"test.png")</pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ3番に32x32ドットの完全透明画像を作成します。</div>
-                    <pre class="ExSource">
-NSDLoad(3,"*32,32")
--- 色指定を省略すると完全透明なテクスチャになります。
--- これはNSDLoadでは使い道がありませんが、後で説明するNSDCallで使います
-                    </pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ4番に48x24ドット、R=128 G=64 B=32 α=255で塗りつぶされた画像を作成します。</div>
-                    <pre class="ExSource">NSDLoad(4,"*48,24,128,64,32,255")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDoEvents" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすどぅいべんつ</span><br />
-                NSDoEvents
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>b=NSDoEvents()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">trueのときは直ちにNScripterに処理を戻す</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    時間のかかる関数からは時々これを呼んでWindowsのメッセージを処理してください。<br />
-                    戻り値は終了フラグです。trueのときは直ちに関数から抜けてNScripterに処理を戻してください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">Windowsのメッセージを処理させる。</div>
-                    <pre class="ExSource">b=NSDoEvents() -- b==trueのときは処理をやめてLua関数から抜けること</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDOffMode" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーおふもーど</span><br />
-                NSDOffMode
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDOffMode(mode)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">真偽値</span><span class="ArgMeaning">trueでオフスクリーンバッファに変更</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSDOffMode(true)で、NSD系命令の書きこみ先をオフスクリーンバッファに変更します。<br />
-                    NSDOffMode(false)で、NSD系命令の書きこみ先は画面になります。デフォルトの書き込み先は画面です。<br />
-                    NSDOffMode(true)の時は、NSDPresent、NSDPresentRectは使えません（画面には書きこんでいないため）。<br />
-                    この命令は、次のNSDTransitionと組み合わせて、トランジションを実現するために使います。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NSD系命令の書きこみ先をオフスクリーンバッファに変更します。</div>
-                    <pre class="ExSource">NSDOffMode(true)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDPresent" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーぷりぜんと</span><br />
-                NSDPresent
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDPresent()</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    画面を実際に更新します。ウィンドウ内が再描画されます。<br />
-                    NSDPresent()は全画面、NSDPresetnRect(lx,ly,rx,ry)は指定した矩形領域が再描画されます（それぞれ左上座標、右上座標です）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NSD系命令で描画した画面を実際に更新します。</div>
-                    <pre class="ExSource">NSDPresent()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDPresentRect" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーぷりぜんとれくと</span><br />
-                NSDPresentRect
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDPresentRect(lx,ly,rx,ry)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下Y座標</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    画面を実際に更新します。ウィンドウ内が再描画されます。<br />
-                    NSDPresent()は全画面、NSDPresetnRect(lx,ly,rx,ry)は指定した矩形領域が再描画されます（それぞれ左上座標、右上座標です）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NSD系命令で描画した画面の左半分を実際に更新します。</div>
-                    <pre class="ExSource">NSDPresentRect(0,0,319,479)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDSetSprite" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーせっとすぷらいと</span><br />
-                NSDSetSprite
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDSetSprite(spnum,texnum(,tag))</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSD系命令用のテクスチャを、NScripterのスプライトに変換します。<br />
-                    タグは省略すると"a;"になります。<br />
-                    NSD系命令のテクスチャは常にα付きなので、:a以外には変換できません。<br />
-                    NSD系命令のテクスチャにはセルやアニメ設定の概念がないので、設定が必要ならタグを指定する必要があります。<br />
-                    DLLで作ったフォント画像をNScripterのテクスチャにしたい時などに使えると思います。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterのスプライト0番にテクスチャ8番の画像を変換する。</div>
-                    <pre class="ExSource">NSDSetSprite(0,8)</pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterのスプライト3番にテクスチャ10番の画像をセル数2アニメ無しで変換する。</div>
-                    <pre class="ExSource">NSDSetSprite(3,10,":a/2,0,3;")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDSp" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーえすぴー</span><br />
-                NSDSp
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDSp(num,dx,dy,w,h,sx,sy,alpha)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">幅</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">高さ</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャをα値を考慮して重ね合わせで表示します。拡大縮小回転などの変形処理は行われません。<br />
-                    numはテクスチャ番号です。<br />
-                    dx,dyは転送先、画面上の左上の点の座標。sx,syは転送元、テクスチャ上の左上の点の座標、w,hは幅と高さ、alphaは全体のα値です。<br />
-                    転送元のテクスチャ画像のα値をそのまま使いたい場合は、alphaには255を指定して下さい。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ0番の座標(64,0)サイズ32x32を画面座標(0,64)に半透過で表示します。</div>
-                    <pre class="ExSource">NSDSp(0,0,64,32,32,64,0,128)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDSp2" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーえすぴーつー</span><br />
-                NSDSp2
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDSp2(num,dcx,dcy,sx,sy,w,h,xs,ys,rot,alpha)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先中心X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先中心Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">変形前幅</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">変形前高さ</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">横の倍率（1.0が元のサイズ）</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">縦の倍率（1.0が元のサイズ）</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">回転角（度単位、0.0が回転無し）</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャを回転拡大縮小などの変形処理を加えて画面に転送します。<br />
-                    numはテクスチャ番号です。<br />
-                    dcx,dcyは転送先画面の「中心の」座標、sx,syは転送元テクスチャの「左上の」座標、w,hはテクスチャの「変形前の」幅と高さです。<br />
-                    xs,ysは横・縦の倍率（少数で、1.0が元のサイズ）,rotは回転角（度単位で、少数で、0.0が回転無し）です。alphaは全体のα値です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ0番の座標(64,0)サイズ32x32を画面中心座標(16,80)に、半サイズ・90度回転、半透過で表示します。</div>
-                    <pre class="ExSource">NSDSp2(0,16,80,64,0,32,32,0.5,0.5,90,128)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDSp2Add" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーえすぴーつーあっど</span><br />
-                NSDSp2Add
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDSp2Add(num,dcx,dcy,sx,sy,w,h,xs,ys,rot,alpha)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先中心X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先中心Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">変形前幅</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">変形前高さ</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">横の倍率（1.0が元のサイズ）</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">縦の倍率（1.0が元のサイズ）</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">回転角（度単位、0.0が回転無し）</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    テクスチャを回転拡大縮小などの変形処理を加えて画面に転送します。<br />
-                    numはテクスチャ番号です。<br />
-                    dcx,dcyは転送先画面の「中心の」座標、sx,syは転送元テクスチャの「左上の」座標、w,hはテクスチャの「変形前の」幅と高さです。<br />
-                    xs,ysは横・縦の倍率（少数で、1.0が元のサイズ）,rotは回転角（度単位で、少数で、0.0が回転無し）です。alphaは全体のα値です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ0番の座標(64,0)サイズ32x32を画面中心座標(16,80)に、半サイズ・90度回転、半透過で表示します。</div>
-                    <pre class="ExSource">NSDSp2Add(0,16,80,64,0,32,32,0.5,0.5,90,128)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDSpAdd" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーえすぴーあっど</span><br />
-                NSDSpAdd
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDSpAdd(num,dx,dy,w,h,sx,sy,alpha)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">テクスチャ番号(0～15)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送先左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">幅</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">高さ</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">転送元左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">テクスチャをα値を考慮して、加算合成で表示します。その他はNSDSpと同じです。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">
-                        現状では関係ありませんが、将来的にグラフィックカードの機能を使うときには、なるべくNSDSpAdd,NSDSp2AddとNSDSp,NSDSp2はまとめて実行したほうがいいです。<br />
-                        そのほうがグラフィックカードのモード切替が減らせて、高速化されるからです。
-                    </div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">テクスチャ0番の座標(64,0)サイズ32x32を画面座標(0,64)に半加算合成で表示します。</div>
-                    <pre class="ExSource">NSDSpAdd(0,0,64,32,32,64,0,128)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDTransition" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーとらんじしょん</span><br />
-                NSDTransition
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDTransition(effectnum,effecttime,rulename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">エフェクト番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">持続時間</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ルールファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSDOffMode(true)でオフスクリーンに描き込まれた画像を、実際に画面に反映します。<br />
-                    この関数は、一端画像をNScripterのデータに書き戻してNScripter側のエフェクト処理を呼んでいますので、NScripter側のエフェクトと同程度の重さの処理になります。<br />
-                    NSD～系の描画だけで実現できるエフェクトは、そちらで実装したほうが高速になります。<br />
-                    このとき、NScripterと同じエフェクトが使えます。また、この関数は引数を省略できます。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">ルール画像の指定にはbmpも使えますが、PNGに統一したほうがややこしくないと思います。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">オフスクリーンに描き込まれた画像を、実際に画面に反映します。</div>
-                    <pre class="ExSource">NSDTransition(1)</pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">print 10,500と同じエフェクトを使いたい場合</div>
-                    <pre class="ExSource">NSDTransition(10,500)</pre>
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">print 18,1000,"rule.png"と同じエフェクトを使いたい場合</div>
-                    <pre class="ExSource">NSDTransition(18,1000,"rule.png")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSDTransitionF" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすでぃーとらんじしょんえふ</span><br />
-                NSDTransitionF
-            </h2>
-            <h4><a class="WordCategory" href="#category_directdraw">直接描画</a></h4>
-            <h3>NSDTransitionF(effectnum,effecttime,rulename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">エフェクト番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">持続時間</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ルールファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSDTransition関数は、CTRLキーで高速化したりスペースやクリックでキャンセルしたり出来ます。<br />
-                    NSDTransitionFは高速化やキャンセルが出来ないトランジションを実行します。<br />
-                    そのほかはNSDTransitionと同じです。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">オフスクリーンに描き込まれた画像を、実際に画面に反映します。</div>
-                    <pre class="ExSource">NSDTransitionF(1)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSEnd" />
-            <h2>
-                <span class="WordVersion">Ver.2.95</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえんど</span><br />
-                NSEnd
-            </h2>
-            <h4><a class="WordCategory" href="#category_base">基本機能</a></h4>
-            <h3>NSEnd()</h3>
-            <div class="ContentBody">
-                <p class="Description">NScripterの動作を終了します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterの動作を終了します。</div>
-                    <pre class="ExSource">NSEnd()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSExec" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすえぐぜく</span><br />
-                NSExec
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSExec(script)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">スクリプト文字列</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    文字列で指定されたNScripterの命令を実行します。<br />
-                    命令は一回にひとつだけです。:によるマルチステートメントは使えません。<br />
-                    複数の命令を実行したい場合は、この命令を続けて複数回呼んでください。<br />
-                    goto gosub selectなどジャンプが伴う命令、for next命令は使えません。<br />
-                    命令がLuaを呼び出してもかまいませんが、そこからNSExecを二重に呼んではいけません。<br />
-                    if文は使えますが、マルチステートメントが使えないので、Lua側のifのほうが書きやすいと思います。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">define時に行いたい処理はsystem.luaに裸で書いておけば読み込み時に実行されます。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">"amsp 10,100,50"を実行する。</div>
-                    <pre class="ExSource">NSExec("amsp 10,100,50")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSExecAnimation" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえぐぜくあにめーしょん</span><br />
-                NSExecAnimation
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSExecAnimation()</h3>
-            <div class="ContentBody">
-                <p class="Description">
-                    NScripterのアニメーション処理を実行します。<br />
-                    普段は定期的に呼ばれている関数ですが、Lua内からは自動では呼ばれないので、<br />
-                    アニメーションを実行する必要がある場合は、時々この命令を呼んでください。<br />
-                    （メッセージ待ちの時などに呼ぶのが一般的な使い方です）
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">
-                        なお、アニメーションによってLua関数NSCALL_animationが呼ばれる可能性がありますが、<br />
-                        NSCALL_animationの中からこの関数を呼ぶと無限ループするので、呼ばないでください。<br />
-                        なお、この関数だけでは表示はされません。NSUpdate()もしくはNSExec("print 1")などを呼ぶ必要があります。
-                    </div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterのアニメーション処理を実行する。</div>
-                    <pre class="ExSource">NSExecAnimation()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetClick" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとくりっく</span><br />
-                NSGetClick
-            </h2>
-            <h4><a class="WordCategory" href="#category_input">キーボード・マウス入力</a></h4>
-            <h3>l,r,w,ld,rd=NSGetClick()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">左クリックアップ(true:入力あり、false:入力なし)</span><br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">右クリックアップ(true:入力あり、false:入力なし)</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">ホイール入力(0:入力なし、1以上:上回転、-1以下:下回転)</span><br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">左クリックダウン(true:入力あり、false:入力なし)</span><br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">右クリックダウン(true:入力あり、false:入力なし)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    最後に入力されたマウスクリックを取得します。<br />
-                    lは左クリックアップ（trueかfalse）、rは右クリックアップ（trueかfalse）、wはホイール入力（整数）<br />
-                    ldは左クリックダウン（trueかfalse）、rdは右クリックダウン（trueかfalse）です。<br />
-                    基本的にはlとrとwを見ておけばいいです。アクションゲーム等でldやrdを使うこともあるかもしれません。<br />
-                    Luaは戻り値を省略できるので、後ろが必要ない場合は省けます。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">ホイールクリックは取得できません。(by senzogawa)</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">最後に入力されたマウスクリックを取得する。</div>
-                    <pre class="ExSource">
-l=NSGetMouse() -- 左クリックだけ取得
-l,r,w=NSGetMouse() -- 左右クリックとホイールを取得
-l,r,w,ld,rd=NSGetMouse() -- 全部取得
-                    </pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetFileInfo" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとふぁいるいんふぉ</span><br />
-                NSGetFileInfo
-            </h2>
-            <h4><a class="WordCategory" href="#category_systeminfo">システム情報</a></h4>
-            <h3>arcname,offset,length=NSGetFileInfo(filename)</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">文字列</span><span class="RetMeaning">アーカイブのファイル名(無い場合はnil)</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">スタート位置offset(ファイル先頭から)</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">サイズlength(単位バイト)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    指定したファイルfilenameをnsaもしくはns2アーカイブから探し、<br />
-                    アーカイブのファイル名arcnameと、スタート位置offset（ファイル先頭から）と、<br />
-                    サイズlength（単位バイト）を返します。<br />
-                    ただし、アーカイブでなく生でそのファイルがある場合は、<br />
-                    arcnameにはfilenameそのまま、位置とサイズにはともに０を返します。<br />
-                    （生ファイルのサイズを代入するわけではないので注意）<br />
-                    ファイルがなかったときはarcnameにnilを返します。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">"test.dat"の情報を取得する。</div>
-                    <pre class="ExSource">arcname,offset,length=NSGetFileInfo("test.dat")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetIntValue" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっといんとばりゅー</span><br />
-                NSGetIntValue
-            </h2>
-            <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
-            <h3>num=NSGetIntValue(var)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">数値変数番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">数値変数番号の値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの数値変数から値を取得します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">%10の値を取得する。</div>
-                    <pre class="ExSource">num=NSGetIntValue(10) -- %10の値が返る。</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetKey" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっときー</span><br />
-                NSGetKey
-            </h2>
-            <h4><a class="WordCategory" href="#category_input">キーボード・マウス入力</a></h4>
-            <h3>b=NSGetKey(keycode)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">キー種別</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">左クリックアップ(true:入力あり、false:入力なし)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    そのキーが今押されているかどうかをtrueかfalseで返します。<br />
-                    NScripter命令の「checkkey」とだいたい同じです。<br />
-                    keycodeには次の文字列が指定できます。<br />
-                    ・英字１文字、数字、スペースなどはそのまま指定できます。<br />
-                    ・"ESC" エスケープキー<br />
-                    ・"SPACE"でもスペースキーは取得できます。<br />
-                    ・"RETURN" "ENTER" リターンキー<br />
-                    ・"CTRL" コントロールキー<br />
-                    ・"UP" "DOWN" "LEFT" "RIGHT" カーソルキー上下左右<br />
-                    ・"F1"～"F12" ファンクションキー<br />
-                    ・"PAGEUP" "PAGEDOWN" ページアップ、ダウンキー<br />
-                    ・"SHIFT" シフトキー<br />
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">キーが今押されているかどうかを取得する。</div>
-                    <pre class="ExSource">b=checkkey("CTRL") -- CTRLキーが押されていればtrue</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetMouse" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとまうす</span><br />
-                NSGetMouse
-            </h2>
-            <h4><a class="WordCategory" href="#category_input">キーボード・マウス入力</a></h4>
-            <h3>x,y=NSGetMouse()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">マウスのX座標(画面外の場合は-1)</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">マウスのY座標(画面外の場合は-1)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">マウスの位置を取得します。画面外の場合は-1,-1が返ります。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">マウスの位置を変数x,yに取得する。</div>
-                    <pre class="ExSource">x,y=NSGetMouse()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetSkip" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとすきっぷ</span><br />
-                NSGetSkip
-            </h2>
-            <h4><a class="WordCategory" href="#category_systeminfo">システム情報</a></h4>
-            <h3>skipmode=NSGetSkip()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">スキップモード(0:通常、1:スキップモード、2:オートモード)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">スキップ状態を取得します。0=スキップモードではない 1=スキップモード 2=オートモード です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スキップ状態を取得する。</div>
-                    <pre class="ExSource">skipmode=NSGetSkip()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetStrValue" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとえすてぃーあーるばりゅー</span><br />
-                NSGetStrValue
-            </h2>
-            <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
-            <h3>str=NSGetStrValue(var)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">文字列変数番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">文字列</span><span class="RetMeaning">文字列変数番号の値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの文字列変数から値を取得します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">$12の値を取得する。</div>
-                    <pre class="ExSource">str=NSGetStrValue(12) -- $12の値が返る。</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGetWindowSize" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすげっとうぃんどうさいず</span><br />
-                NSGetWindowSize
-            </h2>
-            <h4><a class="WordCategory" href="#category_systeminfo">システム情報</a></h4>
-            <h3>width,height=NSGetWindowSize()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">ウィンドウの幅</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">ウィンドウの高さ</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterのウィンドウの表示領域の大きさを得ます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterのウィンドウの表示領域の大きさを取得する。</div>
-                    <pre class="ExSource">width,height=NSGetWindowSize()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGosub" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすごーさぶ</span><br />
-                NSGosub
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSGosub(label)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ラベル文字列</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">文字列で指定したラベルにgosubジャンプします。つまりシナリオスクリプトのgosub命令と等価です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">"*sub"にジャンプする。</div>
-                    <pre class="ExSource">NSGosub ("*sub")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSGoto" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすごーとぅー</span><br />
-                NSGoto
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSGoto(label)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ラベル文字列</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    文字列で指定したラベルにgotoジャンプします。つまりシナリオスクリプトのgoto命令と等価です。<br />
-                    ここで、ジャンプするのはあくまでシナリオスクリプト(00.txt等)の実行位置であり、<br />
-                    Luaの実行はそのまま続行されることに注意してください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">"*loop"にジャンプする。</div>
-                    <pre class="ExSource">NSGoto ("*loop")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSInvalidate" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすいんばりでいと</span><br />
-                NSInvalidate
-            </h2>
-            <h4><a class="WordCategory" href="#category_draw">画面描画</a></h4>
-            <h3>NSInvalidate(lx,uy,rx,dy)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">左上Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">右下Y座標</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">無効領域を追加します。この後NSUpdateで再描画します。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">ver.2.95にて利用可能となりました。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">無効領域を追加する。</div>
-                    <pre class="ExSource">NSInvalidate(10,10,100,100) -- (10,10)-(100,100) 幅と高さではなく、「座標」です。</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSLinear" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすりにあ</span><br />
-                NSLinear
-            </h2>
-            <h4><a class="WordCategory" href="#category_spline">スプライン補完</a></h4>
-            <h3>y=NSLinear(x0,y0,x1,y1,x)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">直線上の点X0</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">直線上の点Y0</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">直線上の点X1</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">直線上の点Y1</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">y=f(x)のxの値</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">y=f(x)のyの値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">点x0,y0と点x1,y1を通るような関数fの、y=f(x)の値を求めます。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">20090419版以降で実装。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">(1,5)と(3,15)を通る直線はy=5xですので、x=4の時の値20がyに代入されます。</div>
-                    <pre class="ExSource">y=NSLinear(1,5,3,15,4)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSLuaAnimationInterval" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすあにめーしょんいんたーばる</span><br />
-                NSLuaAnimationInterval
-            </h2>
-            <h4><a class="WordCategory" href="#category_animation">アニメーション</a></h4>
-            <h3>NSLuaAnimationInterval(intervalms)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">アニメーション割り込みの発生間隔(ミリ秒)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    アニメーション割り込みの発生間隔を指定します。<br />
-                    ミリ秒単位で指定出来ますが、その時間で必ず来るとは限りません。<br />
-                    物理的に間に合わない場合はかなり遅れて飛んでくることになります。<br />
-                    実際にどのタイミングで呼び出されたかは、NSTimer()を使って取得してください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">アニメーション割り込みの発生間隔を指定する。</div>
-                    <pre class="ExSource">NSLuaAnimationInterval(20) -- 20ミリ秒に一回呼ばれる</pre>
-                </div>
-                <hr />
-                <a href="#NSCALL_animation">NSCALL_animation</a> / <a href="#NSLuaAnimationMode">NSLuaAnimationMode</a> / <a href="#NSTimer">NSTimer</a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSLuaAnimationMode" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすあにめーしょんもーど</span><br />
-                NSLuaAnimationMode
-            </h2>
-            <h4><a class="WordCategory" href="#category_animation">アニメーション</a></h4>
-            <h3>NSLuaAnimationMode(boolswitch)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">アニメーション割り込みの開始フラグ(true:開始、false:停止)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSLuaアニメーション割り込みを開始したり止めたり出来ます。<br />
-                    デフォルトはfalseですので、設定が終わったらこの関数でtrueを指定して、<br />
-                    割り込みを開始してください。Luaで操作したいオブジェクトがひとつもないときは、<br />
-                    falseを指定して割り込みをとめることが出来ます。trueを指定すればまた割り込みが発生します。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NSLuaアニメーション割り込みを開始する。</div>
-                    <pre class="ExSource">NSLuaAnimationMode(true)</pre>
-                </div>
-                <hr />
-                <a href="#NSCALL_animation">NSCALL_animation</a> / <a href="#NSLuaAnimationInterval">NSLuaAnimationInterval</a> / <a href="#NSTimer">NSTimer</a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggClose" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐくろーず</span><br />
-                NSOggClose
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggClose(ch)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">指定したチャンネルの演奏を終了します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル4の演奏を終了する。</div>
-                    <pre class="ExSource">NSOggClose(4)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggFade" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐいずぷれいいんぐ</span><br />
-                NSOggFade
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggFade(ch,startvol,endvol,time,closeflag)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">フェード開始音量</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">フェード終了音量</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">フェード時間(ミリ秒)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">フェード後終了フラグ(true:終了、false:続行)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    指定したチャンネルをフェード操作します。startvolからendvolまで変化します。timeの単位はミリ秒です。<br />
-                    closeflag=trueでフェード終了後ファイルをクローズします。falseの時は演奏続行です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル10の演奏状態をispに取得する。</div>
-                    <pre class="ExSource">NSOggFade(4,-10000,0,1000,false)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggIsPlaying" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐいずぷれいいんぐ</span><br />
-                NSOggIsPlaying
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>isplaying=NSOggIsPlaying(ch)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">演奏状態(true:演奏中、false:停止中)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">指定したチャンネルが演奏していればtrue していなければfalseが返ります。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">20090419版以降で戻り値が整数となるバグ修正。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル10の演奏状態をispに取得する。</div>
-                    <pre class="ExSource">isp=NSOggIsPlaying(10)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggLoad" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐろーど</span><br />
-                NSOggLoad
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggLoad(ch,filename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    ストリーミング再生チャンネルchにファイルをロードします。再生はしません。<br />
-                    nsogg2.dllが必要です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル3に"se.ogg"をロードする。</div>
-                    <pre class="ExSource">NSOggLoad(3,"se.ogg")</pre>
-                </div>
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+					NSDCopyToBg
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDCopyToBg()</h3>
+				<div class="ContentBody">
+					<p class="Description">
+						NSD-based image processing is independent of NScripter's drawing functions.<br />
+						Therefore, if you exit a Lua function or call NScripter's original features from within Lua, all drawn images will be overwritten.<br />
+						If you need to keep the current screen, you can use this function to copy the current screen to NScripter's "background screen." <br />
+						Note that this command performs the same operation as NScripter's BG load, so all standing sprites will be erased.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Copies the current screen to NScripter's "background screen."</div>
+						<pre class="ExSource">NSDCopyToBg()</pre>
+					</div>
+				</div>
+
+				<a id="NSDDelete" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+					NSDDelete
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDDelete(num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture number (0-15)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Deletes a texture. Even if not explicitly deleted, loading a texture with the same number will remove the old one.<br />
+						Deleting unused textures can save memory.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Deletes texture number 0.</div>
+						<pre class="ExSource">NSDDelete(0)</pre>
+					</div>
+				</div>
+
+				<a id="NSDDLL" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+					NSDDLL
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>procnum=NSDDLL(dllname,funcname)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">DLL file name</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Function name</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Sets a DLL function to be called when creating textures with NSD commands.<br />
+						Execute this only once when loading a Lua file.<br />
+						Use the returned function number as an argument in the NSDCall function.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Loads the Font function from deffont.dll and stores its function number in fontproc.</div>
+						<pre class="ExSource">fontproc=NSDDLL("deffont.dll","Font")</pre>
+					</div>
+				</div>
+
+				<a id="NSDefSpline" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-level】</span><br />
+					NSDefSpline
+				</h2>
+				<h4><a class="WordCategory" href="#category_spline">Spline Interpolation</a></h4>
+				<h3>NSDefSpline(num,xarray,yarray)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Data number (0-99)</span><br />
+					<span class="ArgType">Array</span><span class="ArgMeaning">Array of x-coordinates in ascending order</span><br />
+					<span class="ArgType">Array</span><span class="ArgMeaning">Array of corresponding y-values for each x</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Specify a data number (0-99) for spline interpolation.<br />
+						Pass an array of x-coordinates in ascending order as xarray and their corresponding y-values as yarray.<br />
+						It performs the necessary calculations for spline interpolation and registers the data number.
+					</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">
+							At least three data points are required for spline interpolation.<br />
+							Implemented from version 20090419 onward.
+						</div>
+					</div>
+				</div>
+
+				<a id="NSDFill" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+					NSDFill
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDFill(lx,ly,rx,ry,r,g,b)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Red component (0-255)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Green component (0-255)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Blue component (0-255)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Fills the specified screen area with the specified color.<br />
+						Specify the top-left and bottom-right coordinates and the RGB values (0-255).
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Fills the entire screen white on a 640x480 resolution.</div>
+						<pre class="ExSource">NSDFill(0,0,639,479,255,255,255)</pre>
+					</div>
+				</div>
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDGetSize
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>width, height = NSDGetSize(num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture Number (0-15)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Retrieves the size of the texture.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Retrieves the size of texture number 0.</div>
+						<pre class="ExSource">width, height = NSDGetSize(0)</pre>
+					</div>
+				</div>
+
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDLoad
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDLoad(num, filename)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture Number (0-15)</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">PNG File Name</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Loads a PNG file as a texture. It can read from either archives or standalone files (requires the latest nspng.dll).<br />
+						Specify the texture number from 0 to 15.<br />
+						This function supports transferring specific portions of the image, so group related image chips together to optimize texture switching for future graphic card improvements.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Loads test.png into texture number 2.</div>
+						<pre class="ExSource">NSDLoad(2, "test.png")</pre>
+
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Creates a fully transparent 32x32 pixel texture in texture number 3.</div>
+						<pre class="ExSource">
+				NSDLoad(3, "*32,32")
+				-- Omitting color specification creates a fully transparent texture.
+				-- This is not directly useful in NSDLoad but can be used with NSDCall later.
+						</pre>
+
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Creates a 48x24 pixel texture filled with R=128, G=64, B=32, α=255 in texture number 4.</div>
+						<pre class="ExSource">NSDLoad(4, "*48,24,128,64,32,255")</pre>
+					</div>
+				</div>
+
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSDoEvents
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+				<h3>b = NSDoEvents()</h3>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Returns true if processing should return immediately to NScripter</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Call this function occasionally from time-consuming functions to process Windows messages.<br />
+						The return value is a termination flag. If true, exit the function and return control to NScripter immediately.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Process Windows messages.</div>
+						<pre class="ExSource">b = NSDoEvents() -- If b == true, stop processing and exit the Lua function</pre>
+					</div>
+				</div>
+				 <h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDOffMode
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDOffMode(mode)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Boolean</span><span class="ArgMeaning">Set to true to enable the off-screen buffer</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Use <code>NSDOffMode(true)</code> to switch NSD commands' drawing target to the off-screen buffer.<br />
+						Use <code>NSDOffMode(false)</code> to draw directly to the screen (default).<br />
+						When enabled, <code>NSDPresent</code> and <code>NSDPresentRect</code> cannot be used because no content is drawn on the screen.<br />
+						This function is useful for creating transitions when used with <code>NSDTransition</code>.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Switch the drawing target to the off-screen buffer.</div>
+						<pre class="ExSource">NSDOffMode(true)</pre>
+					</div>
+				</div>
+
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDPresent
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDPresent()</h3>
+				<div class="ContentBody">
+					<p class="Description">
+						Refreshes the screen, updating the entire window display.<br />
+						Use <code>NSDPresent()</code> to refresh the whole screen or <code>NSDPresentRect(lx,ly,rx,ry)</code> to update a specific rectangular area defined by the top-left and bottom-right coordinates.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Refresh the screen after drawing using NSD commands.</div>
+						<pre class="ExSource">NSDPresent()</pre>
+					</div>
+				</div>
+
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDPresentRect
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDPresentRect(lx,ly,rx,ry)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right Y coordinate</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Refreshes a specific rectangular area of the screen.<br />
+						Use <code>NSDPresent()</code> for the entire screen, or <code>NSDPresentRect(lx,ly,rx,ry)</code> for a rectangular region defined by its top-left and bottom-right coordinates.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Refresh the left half of the screen.</div>
+						<pre class="ExSource">NSDPresentRect(0,0,319,479)</pre>
+					</div>
+				</div>
+
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSDSetSprite
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+				<h3>NSDSetSprite(spnum, texnum[, tag])</h3>
+				<div class="ContentBody">
+					<p class="Description">
+						Converts NSD texture data into an NScripter sprite.<br />
+						If <code>tag</code> is omitted, it defaults to "<code>a;</code>".<br />
+						Since NSD textures always include alpha, only "<code>:a</code>" can be used.<br />
+						NSD textures do not have built-in cell or animation settings, so a tag must be specified if required.<br />
+						This function is useful for converting font images created by DLLs into NScripter textures.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Convert texture 8 into NScripter sprite number 0.</div>
+						<pre class="ExSource">NSDSetSprite(0, 8)</pre>
+
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Convert texture 10 into NScripter sprite number 3 with 2 cells and no animation.</div>
+						<pre class="ExSource">NSDSetSprite(3, 10, ":a/2,0,3;")</pre>
+					</div>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSDSp" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-Level】</span><br />
+					NSDSp
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Draw</a></h4>
+				<h3>NSDSp(num, dx, dy, w, h, sx, sy, alpha)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture number (0?15)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Width</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Height</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Alpha value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Displays the texture with consideration for the alpha value. No transformation such as scaling or rotation is performed.<br />
+						`num` is the texture number.<br />
+						`dx, dy` are the coordinates of the top-left point on the destination screen.<br />
+						`sx, sy` are the coordinates of the top-left point on the source texture, and `w, h` are the width and height. `alpha` is the overall alpha value.<br />
+						If you want to use the alpha value from the source texture directly, set `alpha` to 255.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Display texture number 0 at coordinates (64,0) with size 32x32 at screen coordinates (0,64) with semi-transparency.</div>
+						<pre class="ExSource">NSDSp(0, 0, 64, 32, 32, 64, 0, 128)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSDSp2" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-Level】</span><br />
+					NSDSp2
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Draw</a></h4>
+				<h3>NSDSp2(num, dcx, dcy, sx, sy, w, h, xs, ys, rot, alpha)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture number (0?15)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination center X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination center Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Width before transformation</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Height before transformation</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Horizontal scaling factor (1.0 is original size)</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Vertical scaling factor (1.0 is original size)</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Rotation angle (in degrees, 0.0 means no rotation)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Alpha value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Transfers the texture to the screen with transformations such as rotation and scaling.<br />
+						`num` is the texture number.<br />
+						`dcx, dcy` are the "center" coordinates of the destination screen, `sx, sy` are the "top-left" coordinates of the source texture, and `w, h` are the "pre-transformation" width and height of the texture.<br />
+						`xs, ys` are the horizontal and vertical scaling factors (decimal values, with 1.0 being the original size), and `rot` is the rotation angle (in degrees, decimal, with 0.0 being no rotation). `alpha` is the overall alpha value.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Display texture number 0 at coordinates (64,0) with size 32x32 at the screen center coordinates (16,80), half size, 90-degree rotation, with semi-transparency.</div>
+						<pre class="ExSource">NSDSp2(0, 16, 80, 64, 0, 32, 32, 0.5, 0.5, 90, 128)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSDSp2Add" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-Level】</span><br />
+					NSDSp2Add
+				</h2>
+				<h4><a class="WordCategory" href="#category_directdraw">Direct Draw</a></h4>
+				<h3>NSDSp2Add(num, dcx, dcy, sx, sy, w, h, xs, ys, rot, alpha)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Texture number (0?15)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination center X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Destination center Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Width before transformation</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Height before transformation</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Horizontal scaling factor (1.0 is original size)</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Vertical scaling factor (1.0 is original size)</span><br />
+					<span class="ArgType">Real number</span><span class="ArgMeaning">Rotation angle (in degrees, 0.0 means no rotation)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Alpha value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Transfers the texture to the screen with transformations such as rotation and scaling.<br />
+						`num` is the texture number.<br />
+						`dcx, dcy` are the "center" coordinates of the destination screen, `sx, sy` are the "top-left" coordinates of the source texture, and `w, h` are the "pre-transformation" width and height of the texture.<br />
+						`xs, ys` are the horizontal and vertical scaling factors (decimal values, with 1.0 being the original size), and `rot` is the rotation angle (in degrees, decimal, with 0.0 being no rotation). `alpha` is the overall alpha value.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Display texture number 0 at coordinates (64,0) with size 32x32 at the screen center coordinates (16,80), half size, 90-degree rotation, with semi-transparency.</div>
+						<pre class="ExSource">NSDSp2Add(0, 16, 80, 64, 0, 32, 32, 0.5, 0.5, 90, 128)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+					</div>
+					<a id="NSDSpAdd" />
+					<h2>
+						<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+						NSDSpAdd
+					</h2>
+					<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+					<h3>NSDSpAdd(num, dx, dy, w, h, sx, sy, alpha)</h3>
+					<div class="Arguments">
+						●Arguments<br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Texture number (0?15)</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Destination top-left X coordinate</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Destination top-left Y coordinate</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Width</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Height</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left X coordinate</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Source top-left Y coordinate</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Alpha value</span><br />
+					</div>
+					<div class="ContentBody">
+						<p class="Description">Displays the texture with additive blending, considering the alpha value. Everything else is the same as NSDSp.</p>
+						<div class="Notice">
+							<div class="NoticeHead">※</div>
+							<div class="NoticeBody">
+								While it is not relevant at the moment, in the future, when using graphics card features, it is recommended to execute NSDSpAdd, NSDSp2Add together with NSDSp, NSDSp2. This minimizes mode switching of the graphics card and speeds up the process.
+							</div>
+						</div>
+						<div class="Example">
+							<span class="ExHeading">Example)</span><br />
+							<div class="ExComment">Displays texture 0 at coordinates (64,0) with size 32x32 at screen coordinates (0,64) using additive blending.</div>
+							<pre class="ExSource">NSDSpAdd(0, 0, 64, 32, 32, 64, 0, 128)</pre>
+						</div>
+						<hr />
+						<a href="#"></a> /
+						<hr />
+						<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+					</div>
+					<a id="NSDTransition" />
+					<h2>
+						<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+						NSDTransition
+					</h2>
+					<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+					<h3>NSDTransition(effectnum, effecttime, rulename)</h3>
+					<div class="Arguments">
+						●Arguments<br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Effect number</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Duration</span><br />
+						<span class="ArgType">String</span><span class="ArgMeaning">Rule file name</span><br />
+					</div>
+					<div class="ContentBody">
+						<p class="Description">
+							Applies the offscreen drawn image to the screen using NSDOffMode(true).<br />
+							This function writes the image back to NScripter's data and calls NScripter's effect processing, so the processing will be roughly equivalent to NScripter's own effects.<br />
+							If you can implement the effect using only NSD-related drawing functions, it will be faster.<br />
+							You can also use the same effects as in NScripter. Additionally, this function allows you to omit some arguments.
+						</p>
+						<div class="Notice">
+							<div class="NoticeHead">※</div>
+							<div class="NoticeBody">
+								BMP images can be used for rule images, but using PNG is recommended for simplicity.
+							</div>
+						</div>
+						<div class="Example">
+							<span class="ExHeading">Example)</span><br />
+							<div class="ExComment">Applies the image drawn offscreen to the screen.</div>
+							<pre class="ExSource">NSDTransition(1)</pre>
+							<span class="ExHeading">Example)</span><br />
+							<div class="ExComment">Use the same effect as print 10,500</div>
+							<pre class="ExSource">NSDTransition(10, 500)</pre>
+							<span class="ExHeading">Example)</span><br />
+							<div class="ExComment">Use the same effect as print 18,1000,"rule.png"</div>
+							<pre class="ExSource">NSDTransition(18, 1000, "rule.png")</pre>
+						</div>
+						<hr />
+						<a href="#"></a> /
+						<hr />
+						<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+					</div>
+					<a id="NSDTransitionF" />
+					<h2>
+						<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low-level】</span><br />
+						NSDTransitionF
+					</h2>
+					<h4><a class="WordCategory" href="#category_directdraw">Direct Drawing</a></h4>
+					<h3>NSDTransitionF(effectnum, effecttime, rulename)</h3>
+					<div class="Arguments">
+						●Arguments<br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Effect number</span><br />
+						<span class="ArgType">Integer</span><span class="ArgMeaning">Duration</span><br />
+						<span class="ArgType">String</span><span class="ArgMeaning">Rule file name</span><br />
+					</div>
+					<div class="ContentBody">
+						<p class="Description">
+							The NSDTransition function can be accelerated with the CTRL key, and canceled with the space bar or mouse click.<br />
+							NSDTransitionF executes a transition that cannot be accelerated or canceled.<br />
+							Otherwise, it is the same as NSDTransition.
+						</p>
+						<div class="Example">
+							<span class="ExHeading">Example)</span><br />
+							<div class="ExComment">Applies the image drawn offscreen to the screen.</div>
+							<pre class="ExSource">NSDTransitionF(1)</pre>
+						</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSEnd" />
+				<h2>
+					<span class="WordVersion">Ver.2.95</span><span class="WordField">【Low Level】</span><br />
+					NSEnd
+				</h2>
+				<h4><a class="WordCategory" href="#category_base">Basic Functions</a></h4>
+				<h3>NSEnd()</h3>
+				<div class="ContentBody">
+					<p class="Description">Ends the operation of NScripter.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Ends the operation of NScripter.</div>
+						<pre class="ExSource">NSEnd()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSExec" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSExec
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">Execute NScripter</a></h4>
+				<h3>NSExec(script)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Script string</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Executes a NScripter command specified by a string.<br />
+						Only one command can be executed at a time. Multi-statements using `:` are not supported.<br />
+						If you want to execute multiple commands, call this function multiple times.<br />
+						Commands involving jumps such as `goto`, `gosub`, `select`, or `for next` cannot be used.<br />
+						It is okay to call Lua from within the command, but do not call NSExec within Lua.<br />
+						`if` statements can be used, but multi-statements cannot be used, so it might be easier to write the `if` statement in Lua.
+					</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Processes to be done at `define` time can be written directly in `system.lua` and will be executed when loading.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Execute the command "amsp 10,100,50".</div>
+						<pre class="ExSource">NSExec("amsp 10,100,50")</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSExecAnimation" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSExecAnimation
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">Execute NScripter</a></h4>
+				<h3>NSExecAnimation()</h3>
+				<div class="ContentBody">
+					<p class="Description">
+						Executes NScripter's animation processing.<br />
+						This function is normally called periodically, but it is not called automatically from within Lua.<br />
+						If animation needs to be executed, call this function occasionally.<br />
+						(It is commonly called when waiting for a message, for example.)
+					</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">
+							The animation may trigger the Lua function `NSCALL_animation`, but calling this function from within `NSCALL_animation` will result in an infinite loop, so avoid doing so.<br />
+							Also, this function alone does not display anything. You will need to call `NSUpdate()` or `NSExec("print 1")` to display the result.
+						</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Execute NScripter's animation processing.</div>
+						<pre class="ExSource">NSExecAnimation()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetClick" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSGetClick
+				</h2>
+				<h4><a class="WordCategory" href="#category_input">Keyboard and Mouse Input</a></h4>
+				<h3>l, r, w, ld, rd = NSGetClick()</h3>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Left-click release (true: input detected, false: no input)</span><br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Right-click release (true: input detected, false: no input)</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Wheel input (0: no input, 1 or greater: upward rotation, -1 or less: downward rotation)</span><br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Left-click press (true: input detected, false: no input)</span><br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Right-click press (true: input detected, false: no input)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Retrieves the last mouse click input.<br />
+						`l` represents left-click release (true or false), `r` represents right-click release (true or false), `w` represents wheel input (integer),<br />
+						`ld` represents left-click press (true or false), `rd` represents right-click press (true or false).<br />
+						In most cases, you only need to check `l`, `r`, and `w`. For action games, you might use `ld` and `rd`.<br />
+						Lua can omit return values, so if the values are not needed, they can be omitted.
+					</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Wheel clicks cannot be retrieved. (by senzogawa)</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Retrieve the last mouse click input.</div>
+						<pre class="ExSource">
+				l = NSGetMouse() -- Retrieve left-click only
+				l, r, w = NSGetMouse() -- Retrieve left, right clicks and wheel
+				l, r, w, ld, rd = NSGetMouse() -- Retrieve all
+						</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetFileInfo" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-level】</span><br />
+					NSGetFileInfo
+				</h2>
+				<h4><a class="WordCategory" href="#category_systeminfo">System Information</a></h4>
+				<h3>arcname, offset, length = NSGetFileInfo(filename)</h3>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">String</span><span class="RetMeaning">Archive file name (nil if not present)</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Start position offset (from the beginning of the file)</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Size length (in bytes)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Searches for the specified file `filename` in an nsa or ns2 archive,<br />
+						and returns the archive file name `arcname`, the start position `offset` (from the file's beginning), and the size `length` (in bytes).<br />
+						However, if the file is not in an archive and exists directly, `arcname` will be `filename` itself, with both position and size returning 0.<br />
+						(Note that it does not assign the size of the raw file)<br />
+						If the file is not found, `arcname` will return nil.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get information about "test.dat".</div>
+						<pre class="ExSource">arcname, offset, length = NSGetFileInfo("test.dat")</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetIntValue" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High-level】</span><br />
+					NSGetIntValue
+				</h2>
+				<h4><a class="WordCategory" href="#category_variable">Variable Operations</a></h4>
+				<h3>num = NSGetIntValue(var)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Numeric variable number</span><br />
+				</div>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Value of the numeric variable</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the value from NScripter's numeric variable.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the value of %10.</div>
+						<pre class="ExSource">num = NSGetIntValue(10) -- Returns the value of %10.</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetKey" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-level】</span><br />
+					NSGetKey
+				</h2>
+				<h4><a class="WordCategory" href="#category_input">Keyboard/Mouse Input</a></h4>
+				<h3>b = NSGetKey(keycode)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Key type</span><br />
+				</div>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">Left-click up (true: input detected, false: no input)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Returns whether the specified key is currently pressed, as true or false.<br />
+						This is essentially the same as the NScripter command "checkkey".<br />
+						The `keycode` can be one of the following strings:<br />
+						・A single letter, number, space, etc. can be specified directly.<br />
+						・"ESC" Escape key<br />
+						・"SPACE" Space key<br />
+						・"RETURN" "ENTER" Return key<br />
+						・"CTRL" Control key<br />
+						・"UP" "DOWN" "LEFT" "RIGHT" Arrow keys<br />
+						・"F1"～"F12" Function keys<br />
+						・"PAGEUP" "PAGEDOWN" Page Up, Down keys<br />
+						・"SHIFT" Shift key<br />
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Check whether a key is currently pressed.</div>
+						<pre class="ExSource">b = checkkey("CTRL") -- true if CTRL key is pressed</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetMouse" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-level】</span><br />
+					NSGetMouse
+				</h2>
+				<h4><a class="WordCategory" href="#category_input">Keyboard/Mouse Input</a></h4>
+				<h3>x, y = NSGetMouse()</h3>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Mouse X-coordinate (returns -1 if outside the screen)</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Mouse Y-coordinate (returns -1 if outside the screen)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the current mouse position. Returns -1,-1 if the mouse is outside the screen.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the mouse position into variables x and y.</div>
+						<pre class="ExSource">x, y = NSGetMouse()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetSkip" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-level】</span><br />
+					NSGetSkip
+				</h2>
+				<h4><a class="WordCategory" href="#category_systeminfo">System Information</a></h4>
+				<h3>skipmode = NSGetSkip()</h3>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Skip mode (0: normal, 1: skip mode, 2: auto mode)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the current skip mode state. 0 = not in skip mode, 1 = skip mode, 2 = auto mode.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the current skip state.</div>
+						<pre class="ExSource">skipmode = NSGetSkip()</pre>
+					</div>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetStrValue" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSGetStrValue
+				</h2>
+				<h4><a class="WordCategory" href="#category_variable">Variable Operations</a></h4>
+				<h3>str=NSGetStrValue(var)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">String variable number</span><br />
+				</div>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">String</span><span class="RetMeaning">Value of the string variable number</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the value from the NScripter string variable.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the value of $12.</div>
+						<pre class="ExSource">str=NSGetStrValue(12) -- The value of $12 is returned.</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGetWindowSize" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSGetWindowSize
+				</h2>
+				<h4><a class="WordCategory" href="#category_systeminfo">System Information</a></h4>
+				<h3>width,height=NSGetWindowSize()</h3>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Window width</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Window height</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the size of the NScripter window's display area.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the size of the NScripter window's display area.</div>
+						<pre class="ExSource">width,height=NSGetWindowSize()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGosub" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSGosub
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+				<h3>NSGosub(label)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Label string</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Jumps to the label specified by the string, equivalent to the gosub command in the scenario script.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Jump to "*sub".</div>
+						<pre class="ExSource">NSGosub ("*sub")</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSGoto" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSGoto
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+				<h3>NSGoto(label)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Label string</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Jumps to the label specified by the string, equivalent to the goto command in the scenario script.<br />
+						Note that the jump occurs only in the scenario script (such as 00.txt), and the execution of Lua will continue normally.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Jump to "*loop".</div>
+						<pre class="ExSource">NSGoto ("*loop")</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSInvalidate" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSInvalidate
+				</h2>
+				<h4><a class="WordCategory" href="#category_draw">Screen Drawing</a></h4>
+				<h3>NSInvalidate(lx,uy,rx,dy)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Top-left Y coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right X coordinate</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Bottom-right Y coordinate</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Adds an invalid area. The screen will be redrawn with NSUpdate.</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Available since version 2.95.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Add an invalid area.</div>
+						<pre class="ExSource">NSInvalidate(10,10,100,100) -- Coordinates (10,10)-(100,100), not width and height.</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSLinear" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSLinear
+				</h2>
+				<h4><a class="WordCategory" href="#category_spline">Spline Interpolation</a></h4>
+				<h3>y=NSLinear(x0,y0,x1,y1,x)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Point X0 on the line</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Point Y0 on the line</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Point X1 on the line</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Point Y1 on the line</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">x value for y=f(x)</span><br />
+				</div>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">y value for y=f(x)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Finds the y value of the function f that passes through the points (x0, y0) and (x1, y1), using y=f(x).</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Implemented since version 20090419.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">A line passing through (1,5) and (3,15) is y=5x, so when x=4, y=20.</div>
+						<pre class="ExSource">y=NSLinear(1,5,3,15,4)</pre>
+					</div>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSLuaAnimationInterval" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSLuaAnimationInterval
+				</h2>
+				<h4><a class="WordCategory" href="#category_animation">Animation</a></h4>
+				<h3>NSLuaAnimationInterval(intervalms)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Interval for animation interrupts (in milliseconds)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Specifies the interval for animation interrupts.<br />
+						It can be specified in milliseconds, but it is not guaranteed that the interrupt will occur exactly at that time.<br />
+						If it's physically impossible, it may be delayed significantly.<br />
+						To check the exact timing of the interrupt, use NSTimer().
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Specify the interval for animation interrupts.</div>
+						<pre class="ExSource">NSLuaAnimationInterval(20) -- Will be called every 20 milliseconds</pre>
+					</div>
+					<hr />
+					<a href="#NSCALL_animation">NSCALL_animation</a> / <a href="#NSLuaAnimationMode">NSLuaAnimationMode</a> / <a href="#NSTimer">NSTimer</a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSLuaAnimationMode" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSLuaAnimationMode
+				</h2>
+				<h4><a class="WordCategory" href="#category_animation">Animation</a></h4>
+				<h3>NSLuaAnimationMode(boolswitch)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Animation interrupt start flag (true: start, false: stop)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Starts or stops the NSLua animation interrupt.<br />
+						The default is false, so after setting it, specify true to start the interrupt.<br />
+						If there are no objects to manipulate in Lua, specify false to stop the interrupt.<br />
+						If you specify true again, the interrupt will resume.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Start the NSLua animation interrupt.</div>
+						<pre class="ExSource">NSLuaAnimationMode(true)</pre>
+					</div>
+					<hr />
+					<a href="#NSCALL_animation">NSCALL_animation</a> / <a href="#NSLuaAnimationInterval">NSLuaAnimationInterval</a> / <a href="#NSTimer">NSTimer</a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSOggClose" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSOggClose
+				</h2>
+				<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+				<h3>NSOggClose(ch)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Channel number</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Ends the playback of the specified channel.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">End the playback of streaming channel 4.</div>
+						<pre class="ExSource">NSOggClose(4)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSOggFade" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSOggFade
+				</h2>
+				<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+				<h3>NSOggFade(ch,startvol,endvol,time,closeflag)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Channel number</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Fade start volume</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Fade end volume</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Fade duration (milliseconds)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Fade completion flag (true: end, false: continue)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Applies a fade effect to the specified channel. The volume changes from startvol to endvol. The time is in milliseconds.<br />
+						If closeflag=true, the file will be closed after the fade is complete. If false, playback will continue.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Fade the playback of streaming channel 10.</div>
+						<pre class="ExSource">NSOggFade(4,-10000,0,1000,false)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSOggIsPlaying" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSOggIsPlaying
+				</h2>
+				<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+				<h3>isplaying=NSOggIsPlaying(ch)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Channel number</span><br />
+				</div>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Playback status (true: playing, false: stopped)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Returns true if the specified channel is playing, otherwise false.</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Bug fix for integer return value since version 20090419.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Get the playback status of streaming channel 10.</div>
+						<pre class="ExSource">isp=NSOggIsPlaying(10)</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSOggLoad" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSOggLoad
+				</h2>
+				<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+				<h3>NSOggLoad(ch,filename)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Channel number</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Filename</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Loads a file into the streaming playback channel ch. It does not start playback.<br />
+						Requires the nsogg2.dll file.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Load "se.ogg" into streaming channel 3.</div>
+						<pre class="ExSource">NSOggLoad(3,"se.ogg")</pre>
+					</div>
+				</div>
                 <hr />
                 <a href="#"></a> /
                 <hr />
@@ -2207,7 +2059,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSOggPlay" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐぷれい</span><br />
                 NSOggPlay
             </h2>
             <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
@@ -2235,7 +2086,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSOggPlay2" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐぷれいつー</span><br />
                 NSOggPlay2
             </h2>
             <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
@@ -2263,7 +2113,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSOggVolume" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっぐぼりゅーむ</span><br />
                 NSOggVolume
             </h2>
             <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
@@ -2291,7 +2140,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSOkBox" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすおっけーぼっくす</span><br />
                 NSOkBox
             </h2>
             <h4><a class="WordCategory" href="#category_dialog">ダイアログ</a></h4>
@@ -2320,7 +2168,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopComma" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷこんま</span><br />
                 NSPopComma
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2340,7 +2187,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopID" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷあいでぃー</span><br />
                 NSPopID
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2367,7 +2213,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopInt" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷいんと</span><br />
                 NSPopInt
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2391,7 +2236,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopIntRef" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷいんとれふ</span><br />
                 NSPopIntRef
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2415,7 +2259,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopLabel" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷらべる</span><br />
                 NSPopLabel
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2439,7 +2282,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopStr" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷえすてぃーあーる</span><br />
                 NSPopStr
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2463,7 +2305,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSPopStrRef" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすぽっぷえすてぃーあーるれふ</span><br />
                 NSPopStrRef
             </h2>
             <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
@@ -2487,7 +2328,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSReturn" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすりたーん</span><br />
                 NSReturn
             </h2>
             <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
@@ -2507,7 +2347,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSavePoint" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすせーぶぽいんと</span><br />
                 NSSavePoint
             </h2>
             <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
@@ -2527,7 +2366,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSetIntValue" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすせっといんとばりゅー</span><br />
                 NSSetIntValue
             </h2>
             <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
@@ -2552,7 +2390,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSetStrValue" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                <span class="WordPhonetic">えぬえすせっとえすてぃーあーるばりゅー</span><br />
                 NSSetStrValue
             </h2>
             <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
@@ -2577,7 +2414,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSleep" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすすりーぷ</span><br />
                 NSSleep
             </h2>
             <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
@@ -2607,7 +2443,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2Clear" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーくりあ</span><br />
                 NSSp2Clear
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2634,7 +2469,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2GetInfo" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーげっといんふぉ</span><br />
                 NSSp2GetInfo
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2668,7 +2502,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2GetPos" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーげっとぽす</span><br />
                 NSSp2GetPos
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2702,7 +2535,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2Load" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーろーど</span><br />
                 NSSp2Load
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2730,7 +2562,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2Move" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーむーぶ</span><br />
                 NSSp2Move
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2765,7 +2596,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSp2Visible" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーつーびじぶる</span><br />
                 NSSp2Visible
             </h2>
             <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
@@ -2793,7 +2623,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSpCell" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーせる</span><br />
                 NSSpCell
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -2818,7 +2647,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSpClear" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーくりあ</span><br />
                 NSSpClear
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -2845,7 +2673,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSpGetInfo" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーげっといんふぉ</span><br />
                 NSSpGetInfo
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -2879,7 +2706,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSpGetPos" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーげっとぽす</span><br />
                 NSSpGetPos
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -2909,7 +2735,6 @@ l,r,w,ld,rd=NSGetMouse() -- 全部取得
             <a id="NSSpline" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすすぷらいん</span><br />
                 NSSpline
             </h2>
             <h4><a class="WordCategory" href="#category_spline">スプライン補完</a></h4>
@@ -2949,7 +2774,6 @@ y=NSSpline(0,3)
             <a id="NSSpLoad" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーろーど</span><br />
                 NSSpLoad
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -2978,7 +2802,6 @@ y=NSSpline(0,3)
             <a id="NSSpMove" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーむーぶ</span><br />
                 NSSpMove
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -3010,7 +2833,6 @@ y=NSSpline(0,3)
             <a id="NSSpVisible" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすえすぴーびじぶる</span><br />
                 NSSpVisible
             </h2>
             <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
@@ -3038,7 +2860,6 @@ y=NSSpline(0,3)
             <a id="NSSystemCall" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすしすてむこーる</span><br />
                 NSSystemCall
             </h2>
             <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
@@ -3076,7 +2897,6 @@ y=NSSpline(0,3)
             <a id="NSTimer" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすたいまー</span><br />
                 NSTimer
             </h2>
             <h4><a class="WordCategory" href="#category_systeminfo">システム情報</a></h4>
@@ -3105,7 +2925,6 @@ y=NSSpline(0,3)
             <a id="NSUpdate" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすあっぷでーと</span><br />
                 NSUpdate
             </h2>
             <h4><a class="WordCategory" href="#category_draw">画面描画</a></h4>
@@ -3125,7 +2944,6 @@ y=NSSpline(0,3)
             <a id="NSYesNoBox" />
             <h2>
                 <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                <span class="WordPhonetic">えぬえすいえすのーぼっくす</span><br />
                 NSYesNoBox
             </h2>
             <h4><a class="WordCategory" href="#category_dialog">ダイアログ</a></h4>

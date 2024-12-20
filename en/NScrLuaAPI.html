@@ -2051,925 +2051,786 @@ end
 						<pre class="ExSource">NSOggLoad(3,"se.ogg")</pre>
 					</div>
 				</div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggPlay" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSOggPlay
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggPlay(ch,isloop)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-                <span class="ArgType">真偽値</span><span class="ArgMeaning">ループフラグ(true:ループ、false:一回だけ)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    ロードしたファイルを再生します。isloop=trueでループ、falseで一回だけです。<br />
-                    nsogg2.dllが必要です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル3を一回だけ再生する。</div>
-                    <pre class="ExSource">NSOggPlay(3,false)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggPlay2" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSOggPlay2
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggPlay2(ch,point)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-                <span class="ArgType">実数</span><span class="ArgMeaning">ループ開始点(秒)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    ロードしたファイルを再生します。ループ開始点を指定できます。<br />
-                    単位は秒で、double型（実数型）で指定できます。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ループ開始点を1.4142秒後としてストリーミング再生チャンネル4を再生する。</div>
-                    <pre class="ExSource">NSOggPlay2(4,1.4142)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOggVolume" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSOggVolume
-            </h2>
-            <h4><a class="WordCategory" href="#category_ogg">OGGファイル</a></h4>
-            <h3>NSOggVolume(ch,vol)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">チャンネル番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">音量(0:最大、-10000:最小)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    指定したチャンネルの音量を変更します。<br />
-                    0～-10000が指定できます。0が最大、-10000が最小です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ストリーミング再生チャンネル3の音量を最大にする。</div>
-                    <pre class="ExSource">NSOggVolume(3,0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSOkBox" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSOkBox
-            </h2>
-            <h4><a class="WordCategory" href="#category_dialog">ダイアログ</a></h4>
-            <h3>NSOkBox(text,title)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">本文</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">タイトル文字列</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    ダイアログボックスを表示します。<br />
-                    NScripterでいうmesbox命令ですが、本文とタイトルの指定順が逆になっていますのでご注意ください。<br />
-                    （こちらのほうがWindowsでは標準のようなので、標準に従うことにしました。）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ダイアログボックスを表示する。</div>
-                    <pre class="ExSource">NSOkBox("本文です","タイトルです。")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopComma" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopComma
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>NSPopComma()</h3>
-            <div class="ContentBody">
-                <p class="Description">引数列のコンマをひとつ読み飛ばします。引数と引数の間には普通コンマがあります。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">引数列のコンマをひとつ読み飛ばす。</div>
-                    <pre class="ExSource">NSPopComma()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopID" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopID
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>id=NSPopID()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">文字列</span><span class="RetMeaning">識別子形式の文字列の引数(小文字)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NScripterの識別子形式の文字列の引数をひとつ読み込みます。大文字が含まれていた場合小文字に変換されます。<br />
-                    識別子形式とは、たとえばbg命令のblackやwhiteだとか、ld命令のl r cだとかのように、""で囲まれていない文字列です。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">idに識別子形式の文字列の引数をひとつ読み込む。</div>
-                    <pre class="ExSource">id=NSPopID()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopInt" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopInt
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>number=NSPopInt()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">数値の引数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの数値の引数をひとつ読み込みます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">numberに数値の引数をひとつ読み込む。</div>
-                    <pre class="ExSource">number=NSPopInt()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopIntRef" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopIntRef
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>ivalindex=NSPopIntRef()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">数値変数引数の番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの数値変数引数の番号をひとつ読み込みます。%5なら5です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">ivalindexに数値変数引数の番号をひとつ読み込む。</div>
-                    <pre class="ExSource">ivalindex=NSPopIntRef()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopLabel" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopLabel
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>label=NSPopLabel()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">文字列</span><span class="RetMeaning">ラベル名の引数(小文字)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterのラベル名をひとつ読み込みます。大文字だった場合小文字に変換されます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">labelにラベル名をひとつ読み込む。</div>
-                    <pre class="ExSource">label=NSPopLabel()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopStr" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopStr
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>str=NSPopStr()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">文字列</span><span class="RetMeaning">文字列の引数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの文字列の引数をひとつ読み込みます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">strに文字列の引数をひとつ読み込む。</div>
-                    <pre class="ExSource">str=NSPopStr()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSPopStrRef" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSPopStrRef
-            </h2>
-            <h4><a class="WordCategory" href="#category_argument">引数操作</a></h4>
-            <h3>svalindex=NSPopStrRef()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">文字列変数引数の番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの文字列変数引数の番号をひとつ読み込みます。$10なら10です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">svalindexに文字列変数引数の番号をひとつ読み込む。</div>
-                    <pre class="ExSource">svalindex=NSPopStrRef()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSReturn" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSReturn
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSReturn()</h3>
-            <div class="ContentBody">
-                <p class="Description">シナリオスクリプトのサブルーチンからreturnします。つまりシナリオスクリプトのreturn命令と等価です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">シナリオスクリプトのサブルーチンからreturnする。</div>
-                    <pre class="ExSource">NSReturn()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSavePoint" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSavePoint
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSSavePoint()</h3>
-            <div class="ContentBody">
-                <p class="Description">NSExec("savepoint")は駄目です。NSSavePoint()という専用の関数を使ってください。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">セーブポイントを更新する。</div>
-                    <pre class="ExSource">NSSavePoint()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSetIntValue" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSSetIntValue
-            </h2>
-            <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
-            <h3>NSSetIntValue(var, num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">数値変数番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">整数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの数値変数に値を設定します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">%3に10を設定する。</div>
-                    <pre class="ExSource">NSSetIntValue(3,10) -- %3=10</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSetStrValue" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【高水準】</span><br />
-                NSSetStrValue
-            </h2>
-            <h4><a class="WordCategory" href="#category_variable">変数操作</a></h4>
-            <h3>NSSetStrValue(var, str)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">文字列変数番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">整数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">NScripterの文字列変数に値を設定します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">$10に"test"を設定する。</div>
-                    <pre class="ExSource">NSSetStrValue(10,"test") -- $10="test"</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSleep" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSleep
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSSleep(sleepms)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">動作を明け渡す時間(ミリ秒)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    指定した時間（ミリ秒単位）ほかのスレッドに動作を明け渡します。<br />
-                    NScripter命令の「wait」とだいたい同じです。<br />
-                    動作をすぐにNScripterに戻すスクリプトでは必要ありませんが、<br />
-                    長時間Luaスクリプトを走らせっぱなしにするとCPU使用率が上がるので、<br />
-                    適度にNSSleep(1)とかNSSleep(2)とかを呼んでCPU使用率を下げてください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">1ミリ秒間ほかのスレッドに動作を明け渡する。</div>
-                    <pre class="ExSource">NSSleep(1)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2Clear" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2Clear
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>NSSp2Clear(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    拡張スプライトを消去します。<br />
-                    この命令だけでは画面に反映されませんのでNSUpdate()を呼んでください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号2を消去する。</div>
-                    <pre class="ExSource">NSSp2Clear(2)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2GetInfo" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2GetInfo
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>width,height,cellnum=NSSp2GetInfo(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">幅</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">高さ</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">セル数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">拡張スプライトの情報を得ます。幅、高さ、セル数が得られます。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">Luaは戻り値を全部使わなくてもかまいません。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号2の幅と高さを取得する。</div>
-                    <pre class="ExSource">w,h=NSSp2GetInfo(2)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2GetPos" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2GetPos
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>cx,cy,xs,ys,rot,alpha,ope=NSSp2GetPos(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">中心X座標</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">中心Y座標</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">横倍率</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">縦倍率</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">回転角</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">α値(0:透過、255:不透過)</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">出力オプション(0:普通、1:加算合成、2:減算合成)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">拡張スプライトの位置を得ます。中心座標Ｘ，Ｙ，横倍率,縦倍率,回転角,α値,出力オプションが得られます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号7の中心座標をcx,cyに取得する。</div>
-                    <pre class="ExSource">cx,cy=NSSp2GetPos(7)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2Load" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2Load
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>NSSp2Load(num,filename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    拡張スプライト（lsp2系）をロードします。<br />
-                    画面外にロードしますので、移動しないと見えません。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号0に":a/2,0,3;test.bmp"をロードする。</div>
-                    <pre class="ExSource">NSSp2Load(0,":a/2,0,3;test.bmp")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2Move" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2Move
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>NSSp2Move(num,cx,cy,xs,ys,rot,alpha,ope)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">移動先中心X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">移動先中心Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">横倍率</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">縦倍率</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">回転角</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値(0:透過、255:不透過)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">出力オプション(0:普通、1:加算合成、2:減算合成)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    拡張スプライトを移動します。<br />
-                    この命令だけでは画面に反映されませんのでNSUpdate()を呼んでください。<br />
-                    ope=0で普通、ope=1で加算ブレンディング、ope=2で減算ブレンディングです。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号3を100,100に移動し、不透過値を255にする。</div>
-                    <pre class="ExSource">NSSp2Move(0,100,100,100,100,45,255,0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSp2Visible" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSp2Visible
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite_ex">拡張スプライト</a></h4>
-            <h3>NSSp2Visible(num,isvisible)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">拡張スプライト番号</span><br />
-                <span class="ArgType">真偽値</span><span class="ArgMeaning">表示フラグ(true:表示、false:非表示)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    拡張スプライトを表示したり消したりします。trueで表示、falseで非表示です。<br />
-                    この命令だけでは画面に反映されませんのでNSUpdate()を呼んでください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">拡張スプライト番号1を表示する。</div>
-                    <pre class="ExSource">NSSp2Visible(1,true)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpCell" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpCell
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>NSSpCell(num,c)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">セル番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">スプライトのセルを設定します。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号4のセルを0に設定する。</div>
-                    <pre class="ExSource">NSSpCell(4,0)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpClear" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpClear
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>NSSpClear(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    スプライトを消去します。<br />
-                    この命令だけでは画面に反映されませんのでNSUpdate()を呼んでください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号2を消去する。</div>
-                    <pre class="ExSource">NSSpClear(2)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpGetInfo" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpGetInfo
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>width,height,cellnum=NSSpGetInfo(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">幅</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">高さ</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">セル数</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">スプライトの情報を得ます。幅、高さ、セル数が得られます。</p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">Luaは戻り値を全部使わなくてもかまいません。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号2の幅と高さを取得する。</div>
-                    <pre class="ExSource">w,h=NSSpGetInfo(2)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpGetPos" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpGetPos
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>lx,ly,alpha=NSSpGetPos(num)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">左上X座標</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">左上Y座標</span><br />
-                <span class="RetType">整数</span><span class="RetMeaning">α値(0:透過、255:不透過)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">スプライトの位置を得ます。左上座標Ｘ，Ｙ，α値が得られます。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号2の左上座標を取得する。</div>
-                    <pre class="ExSource">lx,ly=NSSpGetPos(2)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpline" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpline
-            </h2>
-            <h4><a class="WordCategory" href="#category_spline">スプライン補完</a></h4>
-            <h3>y=NSSpline(num,x)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">データ番号(0～99)</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">求めたいxの値</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">スプライン補間によるyの値</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    NSDefSplineで定義したデータ番号を指定し、求めたいxの値を指定すると、スプライン補間によってyの値が返ります。<br />
-                    ここで、xはxarrayに指定した最小値と最大値の間になくてはなりません。
-                </p>
-                <div class="Notice">
-                    <div class="NoticeHead">※</div>
-                    <div class="NoticeBody">20090419版以降で実装。</div>
-                </div>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">y=6が返ります。</div>
-                    <pre class="ExSource">
-xa={1,2,4} ya={2,4,8}
-NSDefSpline(0,xa,ya)
-y=NSSpline(0,3)
-                    </pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpLoad" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpLoad
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>NSSpLoad(num,filename)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">ファイル名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    普通のスプライト（lsp系）をロードします。<br />
-                    ファイル名にはlspで使えるのと同じタグが使えます。<br />
-                    画面外にロードしますので、移動しないと見えません。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号0に":a/2,0,3;test.bmp"をロードする。</div>
-                    <pre class="ExSource">NSSpLoad(0,":a/2,0,3;test.bmp")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpMove" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpMove
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>NSSpMove(num,lx,ly,alpha)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">移動先X座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">移動先Y座標</span><br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">α値(0:透過、255:不透過)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    スプライトを移動します。<br />
-                    mspと同じく、この命令だけでは画面に反映されません。<br />
-                    適切なタイミングでNSUpdate()を呼んでください。<br />
-                    （ほかのスプライトも全部描画してからまとめて呼んだほうが効率がいいです）
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号3を100,100に移動し、不透過値を255にする。</div>
-                    <pre class="ExSource">NSSpMove(3,100,100,255)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSpVisible" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSpVisible
-            </h2>
-            <h4><a class="WordCategory" href="#category_sprite">スプライト</a></h4>
-            <h3>NSSpVisible(num,isvisible)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">整数</span><span class="ArgMeaning">スプライト番号</span><br />
-                <span class="ArgType">真偽値</span><span class="ArgMeaning">表示フラグ(true:表示、false:非表示)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    スプライトを表示したり消したりします。trueで表示、falseで非表示です。<br />
-                    この命令だけでは画面に反映されませんのでNSUpdate()を呼んでください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">スプライト番号1を表示する。</div>
-                    <pre class="ExSource">NSSpVisible(1,true)</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSSystemCall" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSSystemCall
-            </h2>
-            <h4><a class="WordCategory" href="#category_execute">NScripter実行</a></h4>
-            <h3>NSSystemCall(callstr)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">機能名</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    指定したNScripterの機能を呼び出します。<br />
-                    NScripter命令で言うmenu_???命令やsystemcall命令等をまとめたものです。<br />
-                    メッセージを送るだけなので、即時実行されないこともあります。<br />
-                    （その場合、NScripterが次にメッセージを処理したときに実行されます）<br />
-                    次の文字列が指定できます。<br />
-                    ★close 　「閉じる」ボタンを押したのと同じ動作をします。<br />
-                    ★end 　NScripterを終了します。何も聞いてこないので注意してください。end命令と同じです。<br />
-                    ★reset 　NScripterをリセットします。何も聞いてこないので注意してください。reset命令と同じです。<br />
-                    ★full 　フルスクリーン化します。<br />
-                    ★window 　ウィンドウ化します。<br />
-                    ★automode　オートモード状態にします。<br />
-                    ★skip 　スキップ状態にします。<br />
-                    ★skipoff 　スキップ状態を解除します。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">NScripterの「閉じる」ボタン機能を呼び出す。</div>
-                    <pre class="ExSource">NSSystemCall("close")</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSTimer" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSTimer
-            </h2>
-            <h4><a class="WordCategory" href="#category_systeminfo">システム情報</a></h4>
-            <h3>count=NSTimer()</h3>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">整数</span><span class="RetMeaning">Windowsが起動してからの経過時間(ミリ秒)</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    1msに1増え続けるタイマーを取得します。resettimer gettimerと同じ精度です。<br />
-                    Windowsが起動してから経過したミリ秒を指すカウンタは、ひたすら増えていくだけです。<br />
-                    この関数からは値を取得することしか出来ません。二回呼び出して、その差をとることで、<br />
-                    経過時間が正確にわかります。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">1msに1増え続けるタイマーを取得する。</div>
-                    <pre class="ExSource">count=NSTimer()</pre>
-                </div>
-                <hr />
-                <a href="#NSCALL_animation">NSCALL_animation</a> / <a href="#NSLuaAnimationInterval">NSLuaAnimationInterval</a> / <a href="#NSLuaAnimationMode">NSLuaAnimationMode</a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSUpdate" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSUpdate
-            </h2>
-            <h4><a class="WordCategory" href="#category_draw">画面描画</a></h4>
-            <h3>NSUpdate()</h3>
-            <div class="ContentBody">
-                <p class="Description">無効領域を再描画します。print 1と等価です。</p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">無効領域を再描画する。</div>
-                    <pre class="ExSource">NSUpdate()</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
-                <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
-            </div>
-            <a id="NSYesNoBox" />
-            <h2>
-                <span class="WordVersion">Ver.2.94</span><span class="WordField">【低水準】</span><br />
-                NSYesNoBox
-            </h2>
-            <h4><a class="WordCategory" href="#category_dialog">ダイアログ</a></h4>
-            <h3>result=NSYesNoBox(text,title)</h3>
-            <div class="Arguments">
-                ●引数<br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">本文</span><br />
-                <span class="ArgType">文字列</span><span class="ArgMeaning">タイトル文字列</span><br />
-            </div>
-            <div class="Returns">
-                ●戻り値<br />
-                <span class="RetType">真偽値</span><span class="RetMeaning">はいを押せばtrue、いいえならfalse</span><br />
-            </div>
-            <div class="ContentBody">
-                <p class="Description">
-                    はい／いいえをたずねるダイアログボックスを表示します。戻り値はbooleanです。<br />
-                    NScripterでいうyesnobox命令ですが、本文とタイトルが逆になっていますのでご注意ください。
-                </p>
-                <div class="Example">
-                    <span class="ExHeading">例)</span><br />
-                    <div class="ExComment">はい／いいえをたずねるダイアログボックスを表示する。</div>
-                    <pre class="ExSource">result=NSYesNoBox("質問です","タイトルです") -- はいを押せばresult=true、いいえならresult=false</pre>
-                </div>
-                <hr />
-                <a href="#"></a> /
-                <hr />
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSOggPlay" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSOggPlay
+			</h2>
+			<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+			<h3>NSOggPlay(ch,isloop)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Channel Number</span><br />
+				<span class="ArgType">Boolean</span><span class="ArgMeaning">Loop Flag (true: loop, false: play once)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Plays the loaded file. If isloop=true, it loops; if false, it plays only once.<br />
+					Requires the nsogg2.dll file.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Play streaming channel 3 only once.</div>
+					<pre class="ExSource">NSOggPlay(3,false)</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSOggPlay2" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSOggPlay2
+			</h2>
+			<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+			<h3>NSOggPlay2(ch,point)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Channel Number</span><br />
+				<span class="ArgType">Float</span><span class="ArgMeaning">Loop Start Point (seconds)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Plays the loaded file, allowing you to specify the loop start point.<br />
+					The time is specified in seconds as a double-type floating-point value.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Play streaming channel 4, starting the loop at 1.4142 seconds.</div>
+					<pre class="ExSource">NSOggPlay2(4,1.4142)</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSOggVolume" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSOggVolume
+			</h2>
+			<h4><a class="WordCategory" href="#category_ogg">OGG Files</a></h4>
+			<h3>NSOggVolume(ch,vol)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Channel Number</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Volume (0: max, -10000: min)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Changes the volume of the specified channel.<br />
+					The valid range is 0 to -10000, where 0 is the maximum and -10000 is the minimum volume.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Set the volume of streaming channel 3 to maximum.</div>
+					<pre class="ExSource">NSOggVolume(3,0)</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSOkBox" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSOkBox
+			</h2>
+			<h4><a class="WordCategory" href="#category_dialog">Dialog</a></h4>
+			<h3>NSOkBox(text,title)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Body Text</span><br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Title Text</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Displays a dialog box.<br />
+					This command is equivalent to the mesbox command in NScripter, but the order of body text and title text is reversed.<br />
+					(This follows the Windows standard, so the standard order is used.)
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Display a dialog box.</div>
+					<pre class="ExSource">NSOkBox("This is the body text","This is the title.")</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSPopComma" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSPopComma
+				</h2>
+				<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+				<h3>NSPopComma()</h3>
+				<div class="ContentBody">
+					<p class="Description">Skips one comma in the argument list. Arguments are usually separated by commas.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Skip one comma in the argument list.</div>
+						<pre class="ExSource">NSPopComma()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSPopID" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSPopID
+				</h2>
+				<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+				<h3>id=NSPopID()</h3>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">String</span><span class="RetMeaning">Identifier-style string argument (lowercase)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Reads one identifier-style string argument from NScripter. If the string contains uppercase letters, they are converted to lowercase.<br />
+						An identifier-style string is a string not enclosed in quotes, such as "black" or "white" in the "bg" command, or "l", "r", "c" in the "ld" command.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Read one identifier-style string argument into id.</div>
+						<pre class="ExSource">id=NSPopID()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSPopInt" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSPopInt
+				</h2>
+				<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+				<h3>number=NSPopInt()</h3>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Numeric argument</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Reads one numeric argument from NScripter.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Read one numeric argument into number.</div>
+						<pre class="ExSource">number=NSPopInt()</pre>
+					</div>
+					<hr />
+					<a href="#"></a> /
+					<hr />
+					<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSPopIntRef" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSPopIntRef
+				</h2>
+				<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+				<h3>ivalindex=NSPopIntRef()</h3>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Index of numeric variable argument</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Reads one index of a numeric variable argument from NScripter. For example, %5 would return 5.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Read one index of a numeric variable argument into ivalindex.</div>
+						<pre class="ExSource">ivalindex=NSPopIntRef()</pre>
+					</div>
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSPopLabel" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSPopLabel
+			</h2>
+			<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+			<h3>label=NSPopLabel()</h3>
+			<div class="Returns">
+				●Return Value<br />
+				<span class="RetType">String</span><span class="RetMeaning">Label name argument (lowercase)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">Reads one label name argument from NScripter. Converts to lowercase if uppercase letters are present.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Read one label name into the variable "label".</div>
+					<pre class="ExSource">label=NSPopLabel()</pre>
+				</div>
+
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSPopStr" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSPopStr
+			</h2>
+			<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+			<h3>str=NSPopStr()</h3>
+			<div class="Returns">
+				●Return Value<br />
+				<span class="RetType">String</span><span class="RetMeaning">String argument</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">Reads one string argument from NScripter.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Read one string argument into the variable "str".</div>
+					<pre class="ExSource">str=NSPopStr()</pre>
+				</div>
+
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSPopStrRef" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSPopStrRef
+			</h2>
+			<h4><a class="WordCategory" href="#category_argument">Argument Operations</a></h4>
+			<h3>svalindex=NSPopStrRef()</h3>
+			<div class="Returns">
+				●Return Value<br />
+				<span class="RetType">Integer</span><span class="RetMeaning">String variable argument index</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">Reads one string variable argument index from NScripter. For example, "$10" returns 10.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Read one string variable argument index into the variable "svalindex".</div>
+					<pre class="ExSource">svalindex=NSPopStrRef()</pre>
+				</div>
+
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSReturn" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+				NSReturn
+			</h2>
+			<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+			<h3>NSReturn()</h3>
+			<div class="ContentBody">
+				<p class="Description">Returns from a scenario script subroutine. Equivalent to the "return" command in the scenario script.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Return from a scenario script subroutine.</div>
+					<pre class="ExSource">NSReturn()</pre>
+				</div>
+
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSSavePoint" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSSavePoint
+			</h2>
+			<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+			<h3>NSSavePoint()</h3>
+			<div class="ContentBody">
+				<p class="Description">Using "NSExec('savepoint')" is not recommended. Use the dedicated "NSSavePoint()" function instead.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Update the save point.</div>
+					<pre class="ExSource">NSSavePoint()</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSSetIntValue" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSSetIntValue
+				</h2>
+				<h4><a class="WordCategory" href="#category_variable">Variable Operations</a></h4>
+				<h3>NSSetIntValue(var, num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Numeric variable index</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Sets a value to a numeric variable in NScripter.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Set 10 to variable %3.</div>
+						<pre class="ExSource">NSSetIntValue(3,10) -- %3=10</pre>
+					</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSSetStrValue" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【High Level】</span><br />
+					NSSetStrValue
+				</h2>
+				<h4><a class="WordCategory" href="#category_variable">Variable Operations</a></h4>
+				<h3>NSSetStrValue(var, str)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">String variable index</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Sets a value to a string variable in NScripter.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Set "test" to variable $10.</div>
+						<pre class="ExSource">NSSetStrValue(10,"test") -- $10="test"</pre>
+					</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSSleep" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSleep
+				</h2>
+				<h4><a class="WordCategory" href="#category_execute">NScripter Execution</a></h4>
+				<h3>NSSleep(sleepms)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Time to yield control (milliseconds)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Yields control to other threads for the specified time (in milliseconds).<br />
+						Similar to NScripter's "wait" command.<br />
+						Not needed for scripts that immediately return control to NScripter,<br />
+						but for long-running Lua scripts, consider calling NSSleep(1) or NSSleep(2)<br />
+						periodically to reduce CPU usage.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Yield control for 1 millisecond.</div>
+						<pre class="ExSource">NSSleep(1)</pre>
+					</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSSp2Clear" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSp2Clear
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprites</a></h4>
+				<h3>NSSp2Clear(num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Extended sprite index</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Clears an extended sprite.<br />
+						Call NSUpdate() afterward to reflect changes on the screen.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Clear extended sprite number 2.</div>
+						<pre class="ExSource">NSSp2Clear(2)</pre>
+					</div>
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+			<a id="NSSp2GetInfo" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSSp2GetInfo
+			</h2>
+			<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprites</a></h4>
+			<h3>width, height, cellnum = NSSp2GetInfo(num)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Extended Sprite Index</span><br />
+			</div>
+			<div class="Returns">
+				●Returns<br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Width</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Height</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Number of Cells</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">Gets information about an extended sprite, including width, height, and the number of cells.</p>
+				<div class="Notice">
+					<div class="NoticeHead">※</div>
+					<div class="NoticeBody">Lua does not require using all return values.</div>
+				</div>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Retrieve the width and height of extended sprite number 2.</div>
+					<pre class="ExSource">w, h = NSSp2GetInfo(2)</pre>
+				</div>
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSSp2GetPos" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSSp2GetPos
+			</h2>
+			<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprites</a></h4>
+			<h3>cx, cy, xs, ys, rot, alpha, ope = NSSp2GetPos(num)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Extended Sprite Index</span><br />
+			</div>
+			<div class="Returns">
+				●Returns<br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Center X Coordinate</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Center Y Coordinate</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Horizontal Scale</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Vertical Scale</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Rotation Angle</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Alpha Value (0: Transparent, 255: Opaque)</span><br />
+				<span class="RetType">Integer</span><span class="RetMeaning">Blend Option (0: Normal, 1: Add, 2: Subtract)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">Retrieves the position and properties of an extended sprite, including coordinates, scale, rotation, alpha value, and blend options.</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Retrieve the center coordinates of extended sprite number 7 into cx and cy.</div>
+					<pre class="ExSource">cx, cy = NSSp2GetPos(7)</pre>
+				</div>
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSSp2Load" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSSp2Load
+			</h2>
+			<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprites</a></h4>
+			<h3>NSSp2Load(num, filename)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Extended Sprite Index</span><br />
+				<span class="ArgType">String</span><span class="ArgMeaning">Filename</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Loads an extended sprite (lsp2 type).<br />
+					The sprite is loaded off-screen, so move it to make it visible.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Load ":a/2,0,3;test.bmp" into extended sprite number 0.</div>
+					<pre class="ExSource">NSSp2Load(0, ":a/2,0,3;test.bmp")</pre>
+				</div>
+			<hr />
+			<a href="#"></a> /
+			<hr />
+			<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+			</div>
+
+			<a id="NSSp2Move" />
+			<h2>
+				<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+				NSSp2Move
+			</h2>
+			<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprites</a></h4>
+			<h3>NSSp2Move(num, cx, cy, xs, ys, rot, alpha, ope)</h3>
+			<div class="Arguments">
+				●Arguments<br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Extended Sprite Index</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Destination X Coordinate</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Destination Y Coordinate</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Horizontal Scale</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Vertical Scale</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Rotation Angle</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Alpha Value (0: Transparent, 255: Opaque)</span><br />
+				<span class="ArgType">Integer</span><span class="ArgMeaning">Blend Option (0: Normal, 1: Add, 2: Subtract)</span><br />
+			</div>
+			<div class="ContentBody">
+				<p class="Description">
+					Moves an extended sprite.<br />
+					Call NSUpdate() to reflect changes on the screen.<br />
+					Use ope=0 for normal, ope=1 for additive blending, and ope=2 for subtractive blending.
+				</p>
+				<div class="Example">
+					<span class="ExHeading">Example)</span><br />
+					<div class="ExComment">Move extended sprite number 3 to (100, 100) with full opacity.</div>
+					<pre class="ExSource">NSSp2Move(0, 100, 100, 100, 100, 45, 255, 0)</pre>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+				<a id="NSSp2Visible" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSp2Visible
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite_ex">Extended Sprite</a></h4>
+				<h3>NSSp2Visible(num,isvisible)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Extended sprite number</span><br />
+					<span class="ArgType">Boolean</span><span class="ArgMeaning">Visibility flag (true: visible, false: hidden)</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Shows or hides an extended sprite. Use true for visible, false for hidden.<br />
+						This command alone won't reflect changes on the screen. Call NSUpdate() afterward.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Display extended sprite number 1.</div>
+						<pre class="ExSource">NSSp2Visible(1,true)</pre>
+					</div>
+				</div>
+
+				<a id="NSSpCell" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSpCell
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite">Sprite</a></h4>
+				<h3>NSSpCell(num,c)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Sprite number</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Cell number</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Sets the cell of a sprite.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Set the cell of sprite number 4 to 0.</div>
+						<pre class="ExSource">NSSpCell(4,0)</pre>
+					</div>
+				</div>
+
+				<a id="NSSpClear" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSpClear
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite">Sprite</a></h4>
+				<h3>NSSpClear(num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Sprite number</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Clears a sprite.<br />
+						This command alone won't reflect changes on the screen. Call NSUpdate() afterward.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Clear sprite number 2.</div>
+						<pre class="ExSource">NSSpClear(2)</pre>
+					</div>
+				</div>
+
+				<a id="NSSpGetInfo" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSpGetInfo
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite">Sprite</a></h4>
+				<h3>width, height, cellnum = NSSpGetInfo(num)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Sprite number</span><br />
+				</div>
+				<div class="Returns">
+					●Return Values<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Width</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Height</span><br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Number of cells</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">Gets the sprite's information: width, height, and number of cells.</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Lua doesn't require using all return values.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Retrieve the width and height of sprite number 2.</div>
+						<pre class="ExSource">w, h = NSSpGetInfo(2)</pre>
+					</div>
+				</div>
+
+				<a id="NSSpline" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low Level】</span><br />
+					NSSpline
+				</h2>
+				<h4><a class="WordCategory" href="#category_spline">Spline Interpolation</a></h4>
+				<h3>y = NSSpline(num, x)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Data number (0-99)</span><br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Desired x-value</span><br />
+				</div>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Integer</span><span class="RetMeaning">Interpolated y-value</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Specify the data number defined by NSDefSpline and the desired x-value. The interpolated y-value is returned.<br />
+						The x-value must be within the minimum and maximum values specified in the x-array.
+					</p>
+					<div class="Notice">
+						<div class="NoticeHead">※</div>
+						<div class="NoticeBody">Implemented from the 20090419 version onward.</div>
+					</div>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">y=6 is returned.</div>
+						<pre class="ExSource">
+				xa={1,2,4} ya={2,4,8}
+				NSDefSpline(0, xa, ya)
+				y = NSSpline(0, 3)
+						</pre>
+					</div>
+				</div>
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+
+				<a id="NSSpLoad" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-Level】</span><br />
+					NSSpLoad
+				</h2>
+				<h4><a class="WordCategory" href="#category_sprite">Sprite</a></h4>
+				<h3>NSSpLoad(num,filename)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">Integer</span><span class="ArgMeaning">Sprite Number</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">File Name</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Loads a regular sprite (LSP type).<br />
+						You can use the same tags that work with LSP in the file name.<br />
+						Since it loads off-screen, you need to move it to make it visible.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Load ":a/2,0,3;test.bmp" into sprite number 0.</div>
+						<pre class="ExSource">NSSpLoad(0,":a/2,0,3;test.bmp")</pre>
+					</div>
+				</div>
+
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+
+				<a id="NSUpdate" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-Level】</span><br />
+					NSUpdate
+				</h2>
+				<h4><a class="WordCategory" href="#category_draw">Screen Drawing</a></h4>
+				<h3>NSUpdate()</h3>
+				<div class="ContentBody">
+					<p class="Description">Redraws invalidated regions. Equivalent to print 1.</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Redraw the invalidated region.</div>
+						<pre class="ExSource">NSUpdate()</pre>
+					</div>
+				</div>
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+
+				<hr />
+				<a href="#"></a> /
+				<hr />
+				<a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
+				</div>
+
+				<a id="NSYesNoBox" />
+				<h2>
+					<span class="WordVersion">Ver.2.94</span><span class="WordField">【Low-Level】</span><br />
+					NSYesNoBox
+				</h2>
+				<h4><a class="WordCategory" href="#category_dialog">Dialog</a></h4>
+				<h3>result=NSYesNoBox(text,title)</h3>
+				<div class="Arguments">
+					●Arguments<br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Body Text</span><br />
+					<span class="ArgType">String</span><span class="ArgMeaning">Title Text</span><br />
+				</div>
+				<div class="Returns">
+					●Return Value<br />
+					<span class="RetType">Boolean</span><span class="RetMeaning">True if "Yes" is pressed, false if "No" is pressed</span><br />
+				</div>
+				<div class="ContentBody">
+					<p class="Description">
+						Displays a dialog box asking "Yes" or "No". The return value is a boolean.<br />
+						This is similar to the NScripter yesnobox command, but note that the body and title are reversed.
+					</p>
+					<div class="Example">
+						<span class="ExHeading">Example)</span><br />
+						<div class="ExComment">Display a dialog box asking "Yes" or "No".</div>
+						<pre class="ExSource">result=NSYesNoBox("This is a question","This is the title") -- Pressing "Yes" sets result=true, pressing "No" sets result=false</pre>
+					</div>
+				</div>
+
+				<hr />
+				<a href="#"></a> /
+				<hr />
                 <a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br />
             </div>
         </div>
